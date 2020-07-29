@@ -4,6 +4,7 @@
 
 # Intellij
 .idea/
+*.iml
 
 # Generated files
 *.g.dart
