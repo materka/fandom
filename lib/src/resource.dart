@@ -33,13 +33,12 @@ abstract class Resource<T extends Resource<T>> {
   Future<Map<String, dynamic>> _get(String action, {Map parameters}) async {
     String url = '${_fandom.baseUrl}/api/v1/${path()}/$action';
     if (parameters != null) {
-      url += '?' +
-          parameters.entries
-              .where((e) => e.value != null)
-              .map((e) => '${e.key}=${e.value}')
-              .join('&');
+      String params = parameters.entries
+          .where((e) => e.value != null)
+          .map((e) => '${e.key}=${e.value}')
+          .join('&');
+      url += '?$params';
     }
-    print(url);
     return _fandom.jsonProvider(url);
   }
 }
@@ -54,7 +53,8 @@ class UserResource extends Resource<UserResource> {
   /// Get details about selected users
   ///
   /// ids - Comma-separated list of user ids. Maximum size of id list is 100
-  /// size - The desired width (and height, because it is a square) for the thumbnail, defaults to 100, 0 for no thumbnail
+  /// size - The desired width (and height, because it is a square) for
+  /// the thumbnail, defaults to 100, 0 for no thumbnail
   Future<UserResultSet> details({String ids = '', int size = 100}) async =>
       _get('Details', parameters: {'ids': ids, 'size': size})
           .then((json) => UserResultSet.fromJson(json));
@@ -85,7 +85,7 @@ class SearchResource extends Resource<SearchResource> {
   ///
   /// query - Search query
   /// langs - Comma separated language codes (e.g. en,de,fr). Default en
-  /// hubs - Comma-separated list of verticals (e.g. Gaming, Entertainment, Lifestyle)
+  /// hubs - Comma-separated list of verticals (e.g. Gaming, Entertainment)
   /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
   /// limit - Limit number of articles returned
   /// minArticleQuality - Minimal value of article quality. Ranges from 0 to 99
@@ -109,7 +109,7 @@ class SearchResource extends Resource<SearchResource> {
   /// Get results for cross-wiki search (extended response)
   ///
   /// query - Search query
-  /// hub - Comma-separated list of verticals (e.g. Gaming, Entertainment, Lifestyle)
+  /// hub - Comma-separated list of verticals (e.g. Gaming, Entertainment)
   /// lang - Comma separated language codes (e.g. en,de,fr)
   /// rank - The ranking to use in fetching the list of results, one of default, newest, oldest, recently-modified, stable, most-viewed, freshest, stalest
   /// limit - Limit the number of results
@@ -248,7 +248,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get articles in alphabetical order
   ///
-  /// category - Return only articles belonging to the provided valid category title
+  /// category - Return only articles belonging to provided valid category title
   /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
   /// limit - Limit the number of results
   /// offset - Lexicographically minimal article title
@@ -266,7 +266,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get expanded articles in alphabetical order
   ///
-  /// category - Return only articles belonging to the provided valid category title
+  /// category - Return only articles belonging to provided valid category title
   /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
   /// limit - Limit the number of results
   /// offset - Lexicographically minimal article title
@@ -332,7 +332,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
   /// Get the most viewed articles on this wiki (regular article)
   ///
   /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// category - Return only articles belonging to the provided valid category title
+  /// category - Return only articles belonging to provided valid category title
   /// limit - Limit the number of result - maximum limit is 250
   /// baseArticleId - Trending and popular related to article with given id
   Future<ArticleResultSet> top(
@@ -350,7 +350,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
   /// Get the most viewed articles on this wiki (expanded article)
   ///
   /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// category - Return only articles belonging to the provided valid category title
+  /// category - Return only articles belonging to provided valid category title
   /// limit - Limit the number of result - maximum limit is 250
   /// baseArticleId - Trending and popular related to article with given id
   Future<ExpandedArticleResultSet> topExpanded(

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
-import 'package:fandom/src/resource.dart';
+import 'resource.dart';
 
 typedef JsonProvider = Future<Map<String, dynamic>> Function(String url);
 
@@ -10,7 +10,8 @@ class Fandom {
   /// Fandom URL
   final String baseUrl;
 
-  /// Callback which will return a json response from a provided fully qualified Fandom URL
+  /// Callback which will return a json response from a provided
+  /// fully qualified Fandom URL
   final JsonProvider jsonProvider;
 
   ActivityResource _activity;
