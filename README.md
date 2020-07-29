@@ -1,17 +1,19 @@
-A library for Dart developers.
-
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+A Dart Fandom API library, which makes it easy to access data from specified fandom URL
 
 ## Usage
 
 A simple usage example:
 
 ```dart
-import 'package:fandom/client.dart';
+import 'dart:convert';
 
-main() {
-  var awesome = new Awesome();
+import 'package:fandom/src/fandom.dart';
+import 'package:http/http.dart' as http;
+
+Future<void> main() async {
+  var fandom = Fandom('https://marvel.fandom.com',
+      (path) => http.get(path).then((value) => json.decode(value.body)));
+  var result = await fandom.activity.latestActivity();
 }
 ```
 
