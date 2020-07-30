@@ -39,8 +39,8 @@ class Fandom {
   /// Get pages related to a given article ID
   RelatedPagesResource get relatedPages => _relatedPages;
 
-  /// Get results for combined (wiki and cross-wiki) search
-  /// Find suggested phrases for chosen query
+  /// Get results for combined (wiki and cross-wiki) search, and
+  /// find suggested phrases for chosen query
   SearchResource get search => _search;
 
   /// Get details about selected users
