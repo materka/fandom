@@ -25,15 +25,18 @@ Future<void> main() async {
 
 One should be able to read the Fandom [APIv1][api] documentation, to understand how the library can be used.
 Library documentation are pretty much the same as the [APIv1][api] documentation.
-### Disclaimer
 
+### Differences between library and API
 Some model names differ between API documentation and library, due to desire of having the model naming
 convention consistent in the library. 
-Resource 'Search Suggestions' is merged into resource 'Search'.
-WikiaItem (context: Navigation) -> WikiaInfo
-Wikia (context: Navigation) -> NavigationLink
-ChildrenItem (context: Navigation) -> NavigationChildren
 
+#### Resource 'Search Suggestions' 
+Merged into resource 'Search'
+
+#### Resource 'Navigation'
+WikiaItem -> WikiaInfo\
+Wikia -> NavigationLink\
+ChildrenItem -> NavigationChildren\
 
 ## Features and bugs
 
