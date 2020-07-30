@@ -8,16 +8,16 @@ part 'activity_response.g.dart';
 
 @JsonSerializable(createToJson: false)
 class ActivityResponse {
-  /// The ID of the article acted upon
+  /// The ID of the article affected
   final int article;
 
-  /// The ID of the user performing the action
+  /// The ID of the user performing the activity
   final int user;
 
-  /// The ID of the revision created from this event,
+  /// The ID of the revision created from this event
   final int revisionId;
 
-  /// The Unix timestamp (in seconds) that the revision was made
+  /// The Unix timestamp (in seconds) when the revision was made
   final int timestamp;
 
   ActivityResponse(this.article, this.user, this.revisionId, this.timestamp);

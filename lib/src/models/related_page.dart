@@ -8,7 +8,9 @@ part 'related_page.g.dart';
 
 @JsonSerializable(createToJson: false)
 class RelatedPage {
-  /// The relative URL of the Article. Absolute URL: obtained from combining relative URL with basepath attribute from response
+  /// The relative URL of the Article.
+  /// Absolute URL: obtained from combining [url] with
+  /// ResultSet.basePath attribute from response
   final String url;
 
   /// Snippet of the article

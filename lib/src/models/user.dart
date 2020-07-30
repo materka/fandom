@@ -8,20 +8,22 @@ part 'user.g.dart';
 
 @JsonSerializable(createToJson: false)
 class User {
-  /// Wikia user name (it can contain space characters),
+  /// Wikia user name (it can contain space characters)
   final String name;
 
-  /// The absolute URL of the user avatar image,
+  /// The absolute URL of the user avatar image
   final String avatar;
 
-  /// The relative URL of the User page. Absolute URL: obtained from combining relative URL with basepath attribute from response.,
+  /// The relative URL of the User page.
+  /// Absolute URL: obtained from combining [url] with ResultSet.basePath
+  /// attribute from response
   final String url;
 
-  /// An internal identification number for User,
+  /// An internal identification number for User
   @JsonKey(name: 'user_id')
   final int userId;
 
-  /// Total number of edits made by user on the current wiki,
+  /// Total number of edits made by user on the current wiki
   final int numberofedits;
 
   /// Wikia user login

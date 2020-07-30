@@ -8,13 +8,13 @@ part 'wikia.g.dart';
 
 @JsonSerializable()
 class Wikia {
-  /// An internal identification number for Wikia,
+  /// An internal identification number for Wikia
   final int id;
 
-  /// Wikia name,
+  /// Wikia name
   final String name;
 
-  /// Wikia language,
+  /// Wikia language
   final String language;
 
   /// Wikia base URL

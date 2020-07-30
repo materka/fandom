@@ -15,7 +15,9 @@ class ExpandedArticle {
   @JsonKey(name: 'original_dimensions')
   final ImageSize originalDimensions;
 
-  /// The relative URL of the Article. Absolute URL: obtained from combining relative URL with basepath attribute from response
+  /// The relative URL of the Article.
+  /// Absolute URL: obtained from combining [url] with
+  /// ResultSet.basePath attribute from response
   final String url;
 
   /// The namespace value of the given article

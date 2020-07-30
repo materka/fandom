@@ -11,7 +11,7 @@ class HubArticle {
   /// An internal identification number for Article
   final int id;
 
-  /// he namespace value of the given article
+  /// The namespace value of the given article
   final int ns;
 
   HubArticle(this.id, this.ns);

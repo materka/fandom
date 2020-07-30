@@ -10,6 +10,7 @@ part 'most_linked_article.g.dart';
 
 @JsonSerializable(createToJson: false)
 class MostLinkedArticle extends Article {
+  /// Number of backlinks for the article
   @JsonKey(name: 'backlink_cnt')
   final int backlinkCount;
 

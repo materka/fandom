@@ -8,7 +8,8 @@ part 'combined_search_article.g.dart';
 
 @JsonSerializable(createToJson: false)
 class CombinedSearchArticle {
-  /// Quality score of the article, ranges from 0 (low quality) to 99 (high quality)
+  /// Quality score of the article
+  /// ranges from 0 (low quality) to 99 (high quality)
   final int quality;
 
   /// URL to the article
@@ -29,7 +30,7 @@ class CombinedSearchArticle {
   /// Language of the article
   final String lang;
 
-  /// Type of article ( book | character | comic_book | location | movie | person | tv_episode | tv_season | tv_series | other | video_game )
+  /// Type of article
   final String type;
 
   /// ID of the article on the Wikia site
@@ -41,3 +42,17 @@ class CombinedSearchArticle {
   factory CombinedSearchArticle.fromJson(Map<String, dynamic> json) =>
       _$CombinedSearchArticleFromJson(json);
 }
+/*
+enum ArticleType {
+  book,
+  character,
+  comicBook,
+  location,
+  movie,
+  person,
+  tvEpisode,
+  tvSeason,
+  tvSeries,
+  other,
+  videoGame
+}*/

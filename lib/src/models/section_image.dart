@@ -8,7 +8,7 @@ part 'section_image.g.dart';
 
 @JsonSerializable(createToJson: false)
 class SectionImage {
-  /// Full image URL
+  /// Absolute image URL
   final String src;
 
   /// Image description

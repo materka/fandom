@@ -11,14 +11,17 @@ part 'new_article.g.dart';
 
 @JsonSerializable(createToJson: false)
 class NewArticle {
-  /// Quality score of the article, ranges from 0 (low quality) to 99 (high quality)
+  /// Quality score of the article,
+  /// ranges from 0 (low quality) to 99 (high quality)
   final int quality;
 
   /// The original dimensions of the thumbnail for the article, if available
   @JsonKey(name: 'original_dimensions')
   final ImageSize originalDimensions;
 
-  /// The relative URL of the Article. Absolute URL: obtained from combining relative URL with basepath attribute from response.
+  /// The relative URL of the Article.
+  /// Absolute URL: obtained from combining [url] with ResultSet.basePath
+  /// attribute from response.
   final String url;
 
   /// The namespace value of the given article

@@ -13,7 +13,9 @@ class WikiaItem {
   /// On wiki navigation bar text
   final String text;
 
-  /// // The relative URL of the Page. Absolute URL: obtained from combining relative URL with basepath attribute from response
+  /// // The relative URL of the Page.
+  /// Absolute URL: obtained from combining [href] with ResultSet.basePath
+  /// attribute from response
   final String href;
 
   /// Children collection containing article or special pages data

@@ -10,7 +10,7 @@ part 'section_content.g.dart';
 
 @JsonSerializable(createToJson: false)
 class SectionContent {
-  /// Content element type can be paragraph or list
+  /// Content element type, can be paragraph or list
   final String type;
 
   /// Cleaned up paragraph text
