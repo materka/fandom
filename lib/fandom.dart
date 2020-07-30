@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
+/// A library for Fandom APIv1 interaction, which makes it easy to access data
+/// from specified fandom URL
 library fandom;
 
 export 'src/fandom.dart';

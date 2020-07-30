@@ -1,4 +1,4 @@
-A Dart library for Fandom [APIv1][api] (formerly known as Wikia), which makes it easy to access data from specified fandom URL
+A library for Fandom [APIv1][api] (formerly known as Wikia) interaction, which makes it easy to access data from specified fandom URL
 
 ## Usage
 One only need to provide a Fandom URL and a callback method which will take a complete Fandom API URL, and return a json
@@ -24,7 +24,7 @@ Future<void> main() async {
 ## Documentation
 
 One should be able to read the Fandom [APIv1][api] documentation, to understand how the library can be used.
-
+Library documentation are pretty much the same as the [APIv1][api] documentation.
 ### Disclaimer
 
 Some model names differ between API documentation and library, due to desire of having the model naming
