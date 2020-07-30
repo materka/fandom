@@ -53,3 +53,4 @@ export 'src/models/wiki_language_data.dart';
 export 'src/models/wikia.dart';
 export 'src/models/wikia_item.dart';
 export 'src/models/wikia_stats.dart';
+export 'src/resource.dart';
