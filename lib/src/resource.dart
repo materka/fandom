@@ -13,6 +13,7 @@ import 'models/expanded_article_result_set.dart';
 import 'models/expanded_cross_wikia_result_set.dart';
 import 'models/hub_article_result_set.dart';
 import 'models/local_wiki_search_result_set.dart';
+import 'models/min_max_date_result_set.dart';
 import 'models/most_linked_article_result_set.dart';
 import 'models/most_linked_expanded_article_result_set.dart';
 import 'models/navigation.dart';
@@ -21,6 +22,8 @@ import 'models/related_page_result_set.dart';
 import 'models/search_suggestion_result_set.dart';
 import 'models/user_query_result_set.dart';
 import 'models/user_result_set.dart';
+import 'models/wam_language_result_set.dart';
+import 'models/wam_result_set.dart';
 import 'models/wiki_data_container.dart';
 
 abstract class Resource<T extends Resource<T>> {
@@ -52,8 +55,8 @@ class UserResource extends Resource<UserResource> {
 
   /// Get details about selected users
   ///
-  /// ids - Comma-separated list of user ids. Maximum size of id list is 100
-  /// size - The desired width (and height, because it is a square) for
+  /// [ids] - Comma-separated list of user ids. Maximum size of id list is 100\
+  /// [size] - The desired width (and height, because it is a square) for\
   /// the thumbnail, defaults to 100, 0 for no thumbnail
   Future<UserResultSet> details({String ids = '', int size = 100}) async =>
       _get('Details', parameters: {'ids': ids, 'size': size})
@@ -61,8 +64,8 @@ class UserResource extends Resource<UserResource> {
 
   /// Query for users whose name matches the given prefix
   ///
-  /// query - User name prefix to query for (max 255 characters)
-  /// limit - Limit the number of results
+  /// [query] - User name prefix to query for (max 255 characters)\
+  /// [limit] - Limit the number of results
   Future<UserQueryResultSet> usersByName(String query, {int limit}) async =>
       _get('UsersByName', parameters: {'query': query, 'limit': limit})
           .then((json) => UserQueryResultSet.fromJson(json));
@@ -83,12 +86,12 @@ class SearchResource extends Resource<SearchResource> {
 
   /// Get results for combined (wiki and cross-wiki) search
   ///
-  /// query - Search query
-  /// langs - Comma separated language codes (e.g. en,de,fr). Default en
-  /// hubs - Comma-separated list of verticals (e.g. Gaming, Entertainment)
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// limit - Limit number of articles returned
-  /// minArticleQuality - Minimal value of article quality. Ranges from 0 to 99
+  /// [query] - Search query\
+  /// [langs] - Comma separated language codes (e.g. en,de,fr). Default en\
+  /// [hubs] - Comma-separated list of verticals (e.g. Gaming, Entertainment)\
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [limit] - Limit number of articles returned\
+  /// [minArticleQuality] - Minimal value of article quality. Ranges from 0 to 99
   Future<CombinedSearchResultSet> combined(String query,
           {String langs = 'en',
           String hubs,
@@ -108,15 +111,15 @@ class SearchResource extends Resource<SearchResource> {
 
   /// Get results for cross-wiki search (extended response)
   ///
-  /// query - Search query
-  /// hub - Comma-separated list of verticals (e.g. Gaming, Entertainment)
-  /// lang - Comma separated language codes (e.g. en,de,fr)
-  /// rank - The ranking to use in fetching the list of results, one of default, newest, oldest, recently-modified, stable, most-viewed, freshest, stalest
-  /// limit - Limit the number of results
-  /// batch - The batch (page) of results to fetch
-  /// height - The desired height for the thumbnail
-  /// width - The desired width for the thumbnail
-  /// snippet - Maximum number of words returned in description
+  /// [query] - Search query\
+  /// [hub] - Comma-separated list of verticals (e.g. Gaming, Entertainment)\
+  /// [lang] - Comma separated language codes (e.g. en,de,fr)\
+  /// [rank] - The ranking to use in fetching the list of results, one of default, newest, oldest, recently-modified, stable, most-viewed, freshest, stalest\
+  /// [limit] - Limit the number of results\
+  /// [batch] - The batch (page) of results to fetch\
+  /// [height] - The desired height for the thumbnail\
+  /// [width] - The desired width for the thumbnail\
+  /// [snippet] - Maximum number of words returned in description
   Future<ExpandedCrossWikiaResultSet> crossWiki(String query,
           {String hub,
           String lang,
@@ -140,13 +143,13 @@ class SearchResource extends Resource<SearchResource> {
 
   /// Search for a given phrase
   ///
-  /// query - Search query
-  /// type - The search type, either articles (default) or videos. For 'videos' value, this parameter should be used with namespaces parameter (namespaces needs to be set to 6)
-  /// rank - The ranking to use in fetching the list of results, one of default, newest, oldest, recently-modified, stable, most-viewed, freshest, stalest
-  /// limit - Limit the number of results
-  /// minArticleQuality - Minimal value of article quality. Ranges from 0 to 99
-  /// batch - The batch (page) of results to fetch
-  /// namespaces - Page namespace number, see more: http://community.wikia.com/wiki/Help:Namespaces
+  /// [query] - Search query\
+  /// [type] - The search type, either articles (default) or videos. For 'videos' value, this parameter should be used with namespaces parameter (namespaces needs to be set to 6)\
+  /// [rank] - The ranking to use in fetching the list of results, one of default, newest, oldest, recently-modified, stable, most-viewed, freshest, stalest\
+  /// [limit] - Limit the number of results\
+  /// [minArticleQuality] - Minimal value of article quality. Ranges from 0 to 99\
+  /// [batch] - The batch (page) of results to fetch\
+  /// [namespaces] - Page namespace number, see more: http://community.wikia.com/wiki/Help:Namespaces
   Future<LocalWikiSearchResultSet> list(String query,
           {String type = 'articles', // TODO: Fix enum
           String rank, // TODO: fix enum
@@ -176,7 +179,7 @@ class SearchSuggestionsResource extends Resource<SearchSuggestionsResource> {
 
   /// Find suggested phrases for chosen query
   ///
-  /// query - Search query
+  /// [query] - Search query
   Future<SearchSuggestionResultSet> list(String query) async =>
       _get('List', parameters: {'query': query})
           .then((json) => SearchSuggestionResultSet.fromJson(json));
@@ -191,8 +194,8 @@ class RelatedPagesResource extends Resource<RelatedPagesResource> {
 
   /// Get pages related to given article ID(s)
   ///
-  /// ids - Comma-separated list of article ids
-  /// limit - Limit the number of results
+  /// [ids] - Comma-separated list of article ids\
+  /// [limit] - Limit the number of results
   Future<RelatedPageResultSet> list({String ids, int limit}) async =>
       _get('List', parameters: {'ids': ids, 'limit': limit})
           .then((json) => RelatedPageResultSet.fromJson(json));
@@ -231,27 +234,27 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get simplified article content
   ///
-  /// id - A single article ID
+  /// [id] - A single article ID
   Future<Content> asSimpleJson(int id) async =>
       _get('AsSimpleJson').then((json) => Content.fromJson(json));
 
   /// Get details about one or more articles
   ///
-  /// ids - Comma-separated list of article ids
-  /// titles - Titles with underscores instead of spaces, comma-separated
-  /// abstract - The desired length for the article's abstract
-  /// width - The desired width for the thumbnail
-  /// height - The desired height for the thumbnail
+  /// [ids] - Comma-separated list of article ids\
+  /// [titles] - Titles with underscores instead of spaces, comma-separated\
+  /// [abstract] - The desired length for the article's abstract\
+  /// [width] - The desired width for the thumbnail\
+  /// [height] - The desired height for the thumbnail
   Future<ExpandedArticleResultSet> details(String ids,
           {String titles, int abstract, int width, int height}) async =>
       _get('Details').then((json) => ExpandedArticleResultSet.fromJson(json));
 
   /// Get articles in alphabetical order
   ///
-  /// category - Return only articles belonging to provided valid category title
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// limit - Limit the number of results
-  /// offset - Lexicographically minimal article title
+  /// [category] - Return only articles belonging to provided valid category title\
+  /// [namespaces] - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [limit] - Limit the number of results\
+  /// [offset] - Lexicographically minimal article title
   Future<ArticleResultSet> list(
           {String category,
           String namespaces,
@@ -266,10 +269,10 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get expanded articles in alphabetical order
   ///
-  /// category - Return only articles belonging to provided valid category title
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// limit - Limit the number of results
-  /// offset - Lexicographically minimal article title
+  /// [category] - Return only articles belonging to provided valid category title\
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [limit] - Limit the number of results\
+  /// [offset] - Lexicographically minimal article title
   Future<ExpandedArticleResultSet> listExpanded(
           {String category,
           String namespaces,
@@ -294,9 +297,9 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get newest articles on this wiki
   ///
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// limit - Limit the number of result - maximum limit is 100
-  /// minArticleQuality - Minimal value of article quality. Ranges from 0 to 99
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [limit] - Limit the number of result - maximum limit is 100\
+  /// [minArticleQuality] - Minimal value of article quality. Ranges from 0 to 99
   Future<NewArticleResultSet> newArticles(
           {String namespaces, int limit, int minArticleQuality}) async =>
       _get('New', parameters: {
@@ -309,8 +312,8 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get most popular articles for the current wiki (regular article)
   ///
-  /// limit - Limit the number of result - maximum limit is 10
-  /// baseArticleId - Trending and popular related to article with given id
+  /// [limit] - Limit the number of result - maximum limit is 10\
+  /// [baseArticleId] - Trending and popular related to article with given id
   Future<ArticleResultSet> popular({int limit, int baseArticleId}) async =>
       _get('Popular', parameters: {
         'limit': max(limit, 10),
@@ -319,8 +322,8 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get most popular articles for the current wiki (expanded article)
   ///
-  /// limit - Limit the number of result - maximum limit is 10
-  /// baseArticleId - Trending and popular related to article with given id
+  /// [limit] - Limit the number of result - maximum limit is 10\
+  /// [baseArticleId] - Trending and popular related to article with given id
   Future<ExpandedArticleResultSet> popularExpanded(
           {int limit, int baseArticleId}) async =>
       _get('Popular', parameters: {
@@ -331,10 +334,10 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get the most viewed articles on this wiki (regular article)
   ///
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// category - Return only articles belonging to provided valid category title
-  /// limit - Limit the number of result - maximum limit is 250
-  /// baseArticleId - Trending and popular related to article with given id
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [category] - Return only articles belonging to provided valid category title\
+  /// [limit] - Limit the number of result - maximum limit is 250\
+  /// [baseArticleId] - Trending and popular related to article with given id
   Future<ArticleResultSet> top(
           {String namespaces,
           String category,
@@ -349,10 +352,10 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get the most viewed articles on this wiki (expanded article)
   ///
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// category - Return only articles belonging to provided valid category title
-  /// limit - Limit the number of result - maximum limit is 250
-  /// baseArticleId - Trending and popular related to article with given id
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [category] - Return only articles belonging to provided valid category title\
+  /// [limit] - Limit the number of result - maximum limit is 250\
+  /// [baseArticleId] - Trending and popular related to article with given id
   Future<ExpandedArticleResultSet> topExpanded(
           {String namespaces,
           String category,
@@ -368,9 +371,9 @@ class ArticlesResource extends Resource<ArticlesResource> {
 
   /// Get the top articles by pageviews for a hub
   ///
-  /// hub - The name of the vertical (e.g. Gaming)
-  /// lang - Comma-separated language codes (e.g. en,de,fr)
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
+  /// [hub] - The name of the vertical (e.g. Gaming)\
+  /// [lang] - Comma-separated language codes (e.g. en,de,fr)\
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces
   Future<HubArticleResultSet> topByHub(String hub,
           {String lang, String namespaces}) async =>
       _get('TopByHub',
@@ -387,9 +390,9 @@ class ActivityResource extends Resource<ActivityResource> {
 
   /// Get the latest activity information
   ///
-  /// limit - Limit the number of results
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// allowDuplicates - Set if duplicate values of an article's revisions made by the same user are not allowed
+  /// [limit] - Limit the number of results\
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [allowDuplicates] - Set if duplicate values of an article's revisions made by the same user are not allowed
   Future<ActivityResponseResultSet> latestActivity(
           {int limit, String namespaces, bool allowDuplicates = true}) async =>
       _get('LatestActivity', parameters: {
@@ -400,9 +403,9 @@ class ActivityResource extends Resource<ActivityResource> {
 
   /// Get recently changed articles
   ///
-  /// limit - Limit the number of results
-  /// namespaces - Comma-separated namespace ids, see more: http://community.wikia.com/wiki/Help:Namespaces
-  /// allowDuplicates - Set if duplicates of articles are not allowed
+  /// [limit] - Limit the number of results\
+  /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
+  /// [allowDuplicates] - Set if duplicates of articles are not allowed
   Future<ActivityResponseResultSet> recentlyChangedArticles(
           {int limit, String namespaces, bool allowDuplicates = true}) async =>
       _get('RecentlyChangedArticles', parameters: {
@@ -418,6 +421,73 @@ class WamResource extends Resource<WamResource> {
 
   @override
   String path() => 'WAM';
+
+  /// Get WAM score starting and last available dates
+  Future<MinMaxDateResultSet> minMaxWamIndexDate() async =>
+      _get('MinMaxWamIndexDate')
+          .then((json) => MinMaxDateResultSet.fromJson(json));
+
+  /// Get WAM index (list of wikis with their WAM ranks)
+  ///
+  /// [wamDay] - day for which the WAM scores are displayed\
+  /// [wamPreviousDay] -day from which the difference in WAM scores is calculated\
+  /// [verticalId] -vertical for which wiki list is to be pulled\
+  /// [wikiLang] - Language code if narrowing the results to specific language\
+  /// [wikiId] - Id of specific wiki to pull\
+  /// [wikiWord] - Fragment of url to search for amongst wikis\
+  /// [excludeBlacklist] -Determines if exclude blacklisted wikis (with Content Warning enabled)\
+  /// [sortColumn] - Column by which to sort (default 'wam')\
+  /// [sortDirection] - Sort direction  (default 'asc')\
+  /// [offset] - Offset from the beginning of data\
+  /// [limit] - limit on fetched number of wikis\
+  /// [fetchAdmins] - Determines if admins of each wiki are to be returned (default 'true')\
+  /// [avatarSize] - Size of admin avatars in pixels if [fetchAdmins] is enabled\
+  /// [fetchWikiImages] - Determines if image of each wiki is to be returned (default 'false')\
+  /// [wikiImageWidth] - Width of wiki image in pixels if [fetchWikiImages] is enabled\
+  /// [wikiImageHeight] - Height of wiki image in pixels if [fetchWikiImages] is enabled. Pass -1 to keep aspect ratio
+  Future<WamResultSet> wamIndex(
+          {int wamDay,
+          int wamPreviousDay,
+          int verticalId,
+          String wikiLang,
+          int wikiId,
+          String wikiWord,
+          bool excludeBlacklist,
+          String sortColumn = 'wam',
+          String sortDirection = 'asc',
+          int offset,
+          int limit,
+          bool fetchAdmins = true,
+          int avatarSize,
+          bool fetchWikiImages = false,
+          int wikiImageWidth,
+          int wikiImageHeight}) async =>
+      _get('WamIndex', parameters: {
+        'wam_day': wamDay,
+        'wam_previous_day': wamPreviousDay,
+        'vertical_id': verticalId,
+        'wiki_lang': wikiLang,
+        'wiki_id': wikiId,
+        'wiki_word': wikiWord,
+        'exclude_blacklist': excludeBlacklist,
+        'sort_column': sortColumn,
+        'sortDirection': sortDirection,
+        'offset': offset,
+        'limit': limit,
+        'fetch_admins': fetchAdmins,
+        'avatar_size': avatarSize,
+        'fetchWikiImages': fetchWikiImages,
+        'wiki_image_width': wikiImageWidth,
+        'wiki_image_height': wikiImageHeight
+      }).then((json) => WamResultSet.fromJson(json));
+
+  /// Get language codes of the wikis that are in the WAM ranking for a given day
+  ///
+  /// [wamDay] - Unix timestamp (in seconds) of the day for the requested\
+  /// language code list
+  Future<WamLanguageResultSet> wamLanguages({int wamDay}) async =>
+      _get('MinMaxWamIndexDate', parameters: {'wam_day': wamDay})
+          .then((json) => WamLanguageResultSet.fromJson(json));
 }
 
 /// Get wikis which name or topic match a keyword
