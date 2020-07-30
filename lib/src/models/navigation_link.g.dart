@@ -1,18 +1,19 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'wikia_item.dart';
+part of 'navigation_link.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-WikiaItem _$WikiaItemFromJson(Map<String, dynamic> json) {
-  return WikiaItem(
+NavigationLink _$NavigationLinkFromJson(Map<String, dynamic> json) {
+  return NavigationLink(
     json['text'] as String,
     json['href'] as String,
     (json['children'] as List)
-        ?.map((e) =>
-            e == null ? null : ChildrenItem.fromJson(e as Map<String, dynamic>))
+        ?.map((e) => e == null
+            ? null
+            : NavigationChildren.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
 }

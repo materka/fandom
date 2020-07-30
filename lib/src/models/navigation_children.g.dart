@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'children_item.dart';
+part of 'navigation_children.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-ChildrenItem _$ChildrenItemFromJson(Map<String, dynamic> json) {
-  return ChildrenItem(
+NavigationChildren _$NavigationChildrenFromJson(Map<String, dynamic> json) {
+  return NavigationChildren(
     json['text'] as String,
     json['href'] as String,
   );

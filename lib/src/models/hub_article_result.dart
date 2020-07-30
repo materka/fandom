@@ -5,14 +5,14 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import 'hub_article.dart';
-import 'wikia.dart';
+import 'wikia_info.dart';
 
 part 'hub_article_result.g.dart';
 
 @JsonSerializable()
 class HubArticleResult {
   /// Wikia info object
-  final Wikia wikia;
+  final WikiaInfo wikia;
 
   final List<HubArticle> articles;
 

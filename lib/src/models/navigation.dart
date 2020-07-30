@@ -4,7 +4,7 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
-import 'wikia_item.dart';
+import 'navigation_link.dart';
 
 part 'navigation.g.dart';
 
@@ -22,10 +22,10 @@ class Navigation {
 @JsonSerializable(createToJson: false)
 class NavigationItem {
   /// On the wiki navigation bar data
-  final List<WikiaItem> wikia;
+  final List<NavigationLink> wikia;
 
   /// User set navigation bars
-  final List<WikiaItem> wiki;
+  final List<NavigationLink> wiki;
 
   NavigationItem(this.wikia, this.wiki);
 

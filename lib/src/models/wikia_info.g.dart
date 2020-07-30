@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'wikia.dart';
+part of 'wikia_info.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Wikia _$WikiaFromJson(Map<String, dynamic> json) {
-  return Wikia(
+WikiaInfo _$WikiaInfoFromJson(Map<String, dynamic> json) {
+  return WikiaInfo(
     json['id'] as int,
     json['name'] as String,
     json['language'] as String,
@@ -15,7 +15,7 @@ Wikia _$WikiaFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$WikiaToJson(Wikia instance) => <String, dynamic>{
+Map<String, dynamic> _$WikiaInfoToJson(WikiaInfo instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'language': instance.language,

@@ -30,6 +30,10 @@ Library documentation are pretty much the same as the [APIv1][api] documentation
 Some model names differ between API documentation and library, due to desire of having the model naming
 convention consistent in the library. 
 Resource 'Search Suggestions' is merged into resource 'Search'.
+WikiaItem (context: Navigation) -> WikiaInfo
+Wikia (context: Navigation) -> NavigationLink
+ChildrenItem (context: Navigation) -> NavigationChildren
+
 
 ## Features and bugs
 

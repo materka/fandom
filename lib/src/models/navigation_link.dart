@@ -4,12 +4,12 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
-import 'children_item.dart';
+import 'navigation_children.dart';
 
-part 'wikia_item.g.dart';
+part 'navigation_link.g.dart';
 
 @JsonSerializable(createToJson: false)
-class WikiaItem {
+class NavigationLink {
   /// On wiki navigation bar text
   final String text;
 
@@ -19,10 +19,10 @@ class WikiaItem {
   final String href;
 
   /// Children collection containing article or special pages data
-  final List<ChildrenItem> children;
+  final List<NavigationChildren> children;
 
-  WikiaItem(this.text, this.href, this.children);
+  NavigationLink(this.text, this.href, this.children);
 
-  factory WikiaItem.fromJson(Map<String, dynamic> json) =>
-      _$WikiaItemFromJson(json);
+  factory NavigationLink.fromJson(Map<String, dynamic> json) =>
+      _$NavigationLinkFromJson(json);
 }

@@ -4,10 +4,10 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
-part 'wikia.g.dart';
+part 'wikia_info.g.dart';
 
 @JsonSerializable()
-class Wikia {
+class WikiaInfo {
   /// An internal identification number for Wikia
   final int id;
 
@@ -20,7 +20,8 @@ class Wikia {
   /// Wikia base URL
   final String domain;
 
-  Wikia(this.id, this.name, this.language, this.domain);
+  WikiaInfo(this.id, this.name, this.language, this.domain);
 
-  factory Wikia.fromJson(Map<String, dynamic> json) => _$WikiaFromJson(json);
+  factory WikiaInfo.fromJson(Map<String, dynamic> json) =>
+      _$WikiaInfoFromJson(json);
 }

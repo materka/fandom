@@ -4,10 +4,10 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
-part 'children_item.g.dart';
+part 'navigation_children.g.dart';
 
 @JsonSerializable(createToJson: false)
-class ChildrenItem {
+class NavigationChildren {
   /// Article or special page title
   final String text;
 
@@ -16,8 +16,8 @@ class ChildrenItem {
   /// attribute from response
   final String href;
 
-  ChildrenItem(this.text, this.href);
+  NavigationChildren(this.text, this.href);
 
-  factory ChildrenItem.fromJson(Map<String, dynamic> json) =>
-      _$ChildrenItemFromJson(json);
+  factory NavigationChildren.fromJson(Map<String, dynamic> json) =>
+      _$NavigationChildrenFromJson(json);
 }
