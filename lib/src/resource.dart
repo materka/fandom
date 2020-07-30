@@ -11,6 +11,7 @@ import 'models/combined_search_result_set.dart';
 import 'models/content.dart';
 import 'models/expanded_article_result_set.dart';
 import 'models/expanded_cross_wikia_result_set.dart';
+import 'models/expanded_wikia_result_set.dart';
 import 'models/hub_article_result_set.dart';
 import 'models/local_wiki_search_result_set.dart';
 import 'models/min_max_date_result_set.dart';
@@ -25,6 +26,8 @@ import 'models/user_result_set.dart';
 import 'models/wam_language_result_set.dart';
 import 'models/wam_result_set.dart';
 import 'models/wiki_data_container.dart';
+import 'models/wikia_details_result_set.dart';
+import 'models/wikia_result_set.dart';
 
 abstract class Resource<T extends Resource<T>> {
   final Fandom _fandom;
@@ -496,4 +499,97 @@ class WikisResource extends Resource<WikisResource> {
 
   @override
   String path() => 'Wikis';
+
+  /// Get wikis which name or topic match a keyword
+  ///
+  /// [string] - Search term\
+  /// [hub] - The name of the vertical (e.g. Gaming, Entertainment, Lifestyle, etc.) to use as a filter\
+  /// [lang] - The comma-separated list of language codes (e.g. en,de,fr,es,it, etc.) to use as a filter\
+  /// [limit] - The maximum number of results to fetch\
+  /// [batch] - The batch/page index to retrieve\
+  /// [includeDomain] - Whether to include wikis' domains as search targets or not
+  Future<WikiaResultSet> byString(String string,
+          {String hub,
+          String lang,
+          int limit,
+          int batch,
+          bool includeDomain}) async =>
+      _get('ByString', parameters: {
+        'string': string,
+        'hub': hub,
+        'lang': lang,
+        'limit': limit,
+        'batch': batch,
+        'includeDomain': includeDomain
+      }).then((json) => WikiaResultSet.fromJson(json));
+
+  /// Get expanded wikis which name or topic match a keyword
+  ///
+  /// [string] - Search term\
+  /// [hub] - The name of the vertical (e.g. Gaming, Entertainment, Lifestyle, etc.) to use as a filter\
+  /// [lang] - The comma-separated list of language codes (e.g. en,de,fr,es,it, etc.) to use as a filter\
+  /// [limit] - The maximum number of results to fetch\
+  /// [batch] - The batch/page index to retrieve\
+  /// [includeDomain] - Whether to include wikis' domains as search targets or not
+  wikisByStringExpanded(String string,
+          {String hub,
+          String lang,
+          int limit,
+          int batch,
+          bool includeDomain}) async =>
+      _get('ByString', parameters: {
+        'expand': 1,
+        'string': string,
+        'hub': hub,
+        'lang': lang,
+        'limit': limit,
+        'batch': batch,
+        'includeDomain': includeDomain
+      }).then((json) => WikiaResultSet.fromJson(json));
+
+  /// Get information about wikis
+  ///
+  /// [ids] - Comma-separated list of wiki ids that will be fetched\
+  /// [height] - Thumbnail height in pixels\
+  /// [width] -	Thumbnail width in pixels\
+  /// [snippet] - Maximum number of words returned in description
+  Future<WikiaDetailsResultSet> details(String ids,
+          {int height, int width, int snippet}) async =>
+      _get('Details', parameters: {
+        'ids': ids,
+        'height': height,
+        'width': width,
+        'snippet': snippet
+      }).then((json) => WikiaDetailsResultSet.fromJson(json));
+
+  /// Get the top wikis by pageviews
+  ///
+  /// [hub] - The name of the vertical (e.g. Gaming, Entertainment, Lifestyle, etc.) to use as a filter\
+  /// [lang] - The comma-separated list of language codes (e.g. en,de,fr,es,it, etc.) to use as a filter\
+  /// [limit] - The maximum number of results to fetch\
+  /// [batch] - The batch/page index to retrieve
+  Future<WikiaResultSet> list(
+          {String hub, String lang, int limit, int batch}) async =>
+      _get('List', parameters: {
+        'hub': hub,
+        'lang': lang,
+        'limit': limit,
+        'batch': batch
+      }).then((json) => WikiaResultSet.fromJson(json));
+
+  /// Get the top expanded wikis by pageviews
+  ///
+  /// [hub] - The name of the vertical (e.g. Gaming, Entertainment, Lifestyle, etc.) to use as a filter\
+  /// [lang] - The comma-separated list of language codes (e.g. en,de,fr,es,it, etc.) to use as a filter\
+  /// [limit] - The maximum number of results to fetch\
+  /// [batch] - The batch/page index to retrieve
+  Future<ExpandedWikiaResultSet> listExpanded(
+          {String hub, String lang, int limit, int batch}) async =>
+      _get('List', parameters: {
+        'expand': 1,
+        'hub': hub,
+        'lang': lang,
+        'limit': limit,
+        'batch': batch
+      }).then((json) => ExpandedWikiaResultSet.fromJson(json));
 }
