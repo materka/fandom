@@ -62,7 +62,9 @@ class Fandom {
       .._navigation = NavigationResource(instance)
       .._relatedPages = RelatedPagesResource(instance)
       .._search = SearchResource(instance)
-      .._user = UserResource(instance);
+      .._user = UserResource(instance)
+      .._wam = WamResource(instance)
+      .._wikis = WikisResource(instance);
     return instance;
   }
 }
