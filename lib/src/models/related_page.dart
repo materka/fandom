@@ -4,6 +4,8 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
+import 'image_size.dart';
+
 part 'related_page.g.dart';
 
 @JsonSerializable(createToJson: false)
@@ -19,13 +21,17 @@ class RelatedPage {
   /// The absolute URL of the image
   final String imgUrl;
 
+  /// Size of image
+  final ImageSize imgOriginalDimensions;
+
   /// An internal identification number for Article
   final int id;
 
   /// Formatted article title
   final String title;
 
-  RelatedPage(this.url, this.text, this.imgUrl, this.id, this.title);
+  RelatedPage(this.url, this.text, this.imgUrl, this.imgOriginalDimensions,
+      this.id, this.title);
 
   factory RelatedPage.fromJson(Map<String, dynamic> json) =>
       _$RelatedPageFromJson(json);

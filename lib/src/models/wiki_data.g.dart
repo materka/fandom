@@ -19,13 +19,28 @@ WikiData _$WikiDataFromJson(Map<String, dynamic> json) {
     json['sitename'] as String,
     json['mainPageTitle'] as String,
     (json['wikiCategories'] as List)?.map((e) => e as String)?.toList(),
-    json['navData'] == null
+    json['localNav'] == null
         ? null
-        : Navigation.fromJson(json['navData'] as Map<String, dynamic>),
+        : Navigation.fromJson(json['localNav'] as Map<String, dynamic>),
     json['vertical'] as String,
     json['basePath'] as String,
     json['isGASpecialWiki'] as bool,
     json['articlePath'] as String,
     json['facebookAppId'] as String,
+    json['appleTouchIcon'] == null
+        ? null
+        : Icon.fromJson(json['appleTouchIcon'] as Map<String, dynamic>),
+    json['favicon'] as String,
+    json['isClosed'] as bool,
+    json['scriptPath'] as String,
+    json['surrogateKey'] as String,
+    json['image'] as String,
+    json['twitterAccount'] as String,
+    json['siteMessage'] as String,
+    json['recommendedVideoRelatedMediaId'] as String,
+    json['recommendedVideoPlaylist'] as String,
+    json['qualarooUrl'] as String,
+    json['cdnRootUrl'] as String,
+    (json['contentNamespaces'] as List)?.map((e) => e as int)?.toList(),
   );
 }

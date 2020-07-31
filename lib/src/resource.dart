@@ -95,6 +95,7 @@ class SearchResource extends Resource<SearchResource> {
   /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
   /// [limit] - Limit number of articles returned\
   /// [minArticleQuality] - Minimal value of article quality. Ranges from 0 to 99
+  @Deprecated('This endpoint seem to removed from the the API')
   Future<CombinedSearchResultSet> combined(String query,
           {String langs = 'en',
           String hubs,
@@ -123,6 +124,7 @@ class SearchResource extends Resource<SearchResource> {
   /// [height] - The desired height for the thumbnail\
   /// [width] - The desired width for the thumbnail\
   /// [snippet] - Maximum number of words returned in description
+  /// @Deprecated('This endpoint seem to removed from the API')
   Future<ExpandedCrossWikiaResultSet> crossWiki(String query,
           {String hub,
           String lang,

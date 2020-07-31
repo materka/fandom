@@ -49,7 +49,7 @@ class ExpandedWikia {
   final String lang;
 
   /// Array with ten top contributors
-  final String topUsers;
+  final List<int> topUsers;
 
   /// Wiki wordmark image URL, might be empty
   final String wordmark;

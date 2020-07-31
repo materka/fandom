@@ -25,7 +25,7 @@ ExpandedWikia _$ExpandedWikiaFromJson(Map<String, dynamic> json) {
     (json['wam_score'] as num)?.toDouble(),
     json['id'] as int,
     json['lang'] as String,
-    json['topUsers'] as String,
+    (json['topUsers'] as List)?.map((e) => e as int)?.toList(),
     json['wordmark'] as String,
     json['topic'] as String,
     json['title'] as String,

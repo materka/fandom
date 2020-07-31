@@ -29,5 +29,6 @@ Wam _$WamFromJson(Map<String, dynamic> json) {
     json['wiki_id'] as int,
     json['title'] as String,
     json['vertical_id'] as int,
+    json['peak_vertical_wam_rank'] as int,
   );
 }

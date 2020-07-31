@@ -38,6 +38,13 @@ WikiaItem -> WikiaInfo\
 Wikia -> NavigationLink\
 ChildrenItem -> NavigationChildren\
 
+#### Resource 'User'
+UserElement -> User\
+UserQueryResultItem -> UserQuery\
+
+#### Resource 'Search'
+LocalWikiSearchResult -> LocalWikiSearch\
+
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].

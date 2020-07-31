@@ -11,6 +11,10 @@ RelatedPage _$RelatedPageFromJson(Map<String, dynamic> json) {
     json['url'] as String,
     json['text'] as String,
     json['imgUrl'] as String,
+    json['imgOriginalDimensions'] == null
+        ? null
+        : ImageSize.fromJson(
+            json['imgOriginalDimensions'] as Map<String, dynamic>),
     json['id'] as int,
     json['title'] as String,
   );

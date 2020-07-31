@@ -24,13 +24,18 @@ class User {
   final int userId;
 
   /// Total number of edits made by user on the current wiki
-  final int numberofedits;
+  /// @JsonKey(name: 'numberofedits')
+  final int numberOfEdits;
 
   /// Wikia user login
   final String title;
 
-  User(this.name, this.avatar, this.url, this.userId, this.numberofedits,
-      this.title);
+  /// Is the user subject to CCPA (California Consumer Privacy Act) 1 - Yes, 0 -No
+  @JsonKey(name: 'is_subject_to_ccpa')
+  final int isSubjectToCCPA;
+
+  User(this.name, this.avatar, this.url, this.userId, this.numberOfEdits,
+      this.title, this.isSubjectToCCPA);
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 }

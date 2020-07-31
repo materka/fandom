@@ -4,6 +4,7 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
+import 'icon.dart';
 import 'navigation.dart';
 import 'wiki_language_data.dart';
 
@@ -17,15 +18,31 @@ class WikiData {
   final int id;
   final WikiLanguageData language;
   final dynamic namespaces;
-  final String sitename;
+  @JsonKey(name: 'sitename')
+  final String siteName;
   final String mainPageTitle;
   final List<String> wikiCategories;
-  final Navigation navData;
+  final Navigation localNav;
   final String vertical;
   final String basePath;
   final bool isGASpecialWiki;
   final String articlePath;
   final String facebookAppId;
+  final Icon appleTouchIcon;
+
+  /// Favicon image URL
+  final String favicon;
+  final bool isClosed;
+  final String scriptPath;
+  final String surrogateKey;
+  final String image;
+  final String twitterAccount;
+  final String siteMessage;
+  final String recommendedVideoRelatedMediaId;
+  final String recommendedVideoPlaylist;
+  final String qualarooUrl;
+  final String cdnRootUrl;
+  final List<int> contentNamespaces;
 
   WikiData(
       this.cacheBuster,
@@ -34,15 +51,28 @@ class WikiData {
       this.id,
       this.language,
       this.namespaces,
-      this.sitename,
+      this.siteName,
       this.mainPageTitle,
       this.wikiCategories,
-      this.navData,
+      this.localNav,
       this.vertical,
       this.basePath,
       this.isGASpecialWiki,
       this.articlePath,
-      this.facebookAppId);
+      this.facebookAppId,
+      this.appleTouchIcon,
+      this.favicon,
+      this.isClosed,
+      this.scriptPath,
+      this.surrogateKey,
+      this.image,
+      this.twitterAccount,
+      this.siteMessage,
+      this.recommendedVideoRelatedMediaId,
+      this.recommendedVideoPlaylist,
+      this.qualarooUrl,
+      this.cdnRootUrl,
+      this.contentNamespaces);
 
   factory WikiData.fromJson(Map<String, dynamic> json) =>
       _$WikiDataFromJson(json);

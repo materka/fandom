@@ -79,6 +79,9 @@ class Wam {
   @JsonKey(name: 'vertical_id')
   final int verticalId;
 
+  @JsonKey(name: 'peak_vertical_wam_rank')
+  final int peakVerticalWamRank;
+
   Wam(
       this.wam,
       this.top1kWeeks,
@@ -97,7 +100,8 @@ class Wam {
       this.peakHubWamRank,
       this.wikiId,
       this.title,
-      this.verticalId);
+      this.verticalId,
+      this.peakVerticalWamRank);
 
   factory Wam.fromJson(Map<String, dynamic> json) => _$WamFromJson(json);
 }

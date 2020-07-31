@@ -12,7 +12,8 @@ User _$UserFromJson(Map<String, dynamic> json) {
     json['avatar'] as String,
     json['url'] as String,
     json['user_id'] as int,
-    json['numberofedits'] as int,
+    json['numberOfEdits'] as int,
     json['title'] as String,
+    json['is_subject_to_ccpa'] as int,
   );
 }
