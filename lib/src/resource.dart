@@ -124,7 +124,7 @@ class SearchResource extends Resource<SearchResource> {
   /// [height] - The desired height for the thumbnail\
   /// [width] - The desired width for the thumbnail\
   /// [snippet] - Maximum number of words returned in description
-  /// @Deprecated('This endpoint seem to removed from the API')
+  @Deprecated('This endpoint seem to removed from the API')
   Future<ExpandedCrossWikiaResultSet> crossWiki(String query,
           {String hub,
           String lang,
