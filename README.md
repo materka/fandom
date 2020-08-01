@@ -5,7 +5,7 @@ One only need to provide a Fandom URL and a callback method which will take a co
 response. With this approach the library is fully http client agnostic, so you may use any http client library you like
 for requests.
 
-A simple usage example using Dart http library for request:
+Using http library:
 
 ```dart
 import 'dart:convert';
@@ -16,6 +16,19 @@ import 'package:http/http.dart' as http;
 Future<void> main() async {
   var fandom = Fandom('https://marvel.fandom.com',
       (path) => http.get(path).then((value) => json.decode(value.body)));
+  var result = await fandom.search.list('Wolverine');
+  print('result: ${result.items.first.snippet}');
+}
+```
+
+Using Dio library:
+```
+import 'package:dio/dio.dart';
+import 'package:fandom/src/fandom.dart';
+
+Future<void> main() async {
+  var fandom = Fandom('https://marvel.fandom.com',
+      (path) => Dio().get(path).then((value) => value.data));
   var result = await fandom.search.list('Wolverine');
   print('result: ${result.items.first.snippet}');
 }
