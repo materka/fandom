@@ -23,10 +23,13 @@ Future<void> main() async {
 
 ## Documentation
 
-One should be able to read the Fandom [APIv1][api] documentation, to understand how the library can be used.
-Library documentation are pretty much the same as the [APIv1][api] documentation.
+One should be able to read the Fandom [APIv1][api] documentation, to get the general gist on how to use the library.
 
-### Differences between library and API
+### Disclaimer
+The API documentation is not exactly up to date with what is actually returned in a response. So the library may use other types for variables than
+what is stated in API documentation, and some instance members are missing and some new ones are not in the API documentation. I´ve done my best to weed out most of the pecularities...
+
+### Some differences between library and API
 Some model names differ between API documentation and library, due to desire of having the model naming
 convention consistent in the library. 
 
@@ -36,7 +39,6 @@ Merged into resource 'Search'
 #### Resource 'Navigation'
 WikiaItem -> WikiaInfo\
 Wikia -> NavigationLink\
-ChildrenItem -> NavigationChildren\
 
 #### Resource 'User'
 UserElement -> User\
