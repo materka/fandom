@@ -26,8 +26,7 @@ Future<void> main() async {
 One should be able to read the Fandom [APIv1][api] documentation, to get the general gist on how to use the library.
 
 ### Disclaimer
-The API documentation is not exactly up to date with what is actually returned in a response. So the library may use other types for variables than
-what is stated in API documentation, and some instance members are missing and some new ones are not in the API documentation. I´ve done my best to weed out most of the pecularities...
+The API documentation is not exactly up to date with what is actually returned in a response. So the library may use other types for instance members than what is stated in API documentation, and some members are missing and some new ones are not in the API documentation. I´ve done my best to weed out most of the pecularities...
 
 ### Some differences between library and API
 Some model names differ between API documentation and library, due to desire of having the model naming
