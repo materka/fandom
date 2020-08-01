@@ -8,12 +8,17 @@ import 'result_set.dart';
 
 part 'wam_language_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class WamLanguageResultSet extends ResultSet<String> {
-  /// items - list of language codes of the wikis that are in the WAM ranking
+  /// list of language codes of the wikis that are in the WAM ranking
   /// for a given day
+  @JsonKey(name: 'languages')
+  List<String> get items => super.items;
+
   WamLanguageResultSet(List<String> items) : super(items, null);
 
   factory WamLanguageResultSet.fromJson(Map<String, dynamic> json) =>
       _$WamLanguageResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WamLanguageResultSetToJson(this);
 }

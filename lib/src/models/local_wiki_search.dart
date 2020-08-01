@@ -6,12 +6,8 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'local_wiki_search.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class LocalWikiSearch {
-  /// Quality score of the article,
-  /// ranges from 0 (low quality) to 99 (high quality)
-  final int quality;
-
   /// The absolute URL of the Article
   final String url;
 
@@ -27,9 +23,10 @@ class LocalWikiSearch {
   /// Snippet with highlighted match (HTML format)
   final String snippet;
 
-  LocalWikiSearch(
-      this.quality, this.url, this.ns, this.id, this.title, this.snippet);
+  LocalWikiSearch(this.url, this.ns, this.id, this.title, this.snippet);
 
   factory LocalWikiSearch.fromJson(Map<String, dynamic> json) =>
       _$LocalWikiSearchFromJson(json);
+
+  Map<String, dynamic> toJson() => _$LocalWikiSearchToJson(this);
 }

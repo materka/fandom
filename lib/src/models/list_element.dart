@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'list_element.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ListElement {
   /// Cleaned up list element text
   final String text;
@@ -18,4 +18,6 @@ class ListElement {
 
   factory ListElement.fromJson(Map<String, dynamic> json) =>
       _$ListElementFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ListElementToJson(this);
 }

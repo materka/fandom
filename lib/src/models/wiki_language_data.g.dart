@@ -14,3 +14,19 @@ WikiLanguageData _$WikiLanguageDataFromJson(Map<String, dynamic> json) {
     json['contentDir'] as String,
   );
 }
+
+Map<String, dynamic> _$WikiLanguageDataToJson(WikiLanguageData instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user);
+  writeNotNull('userDir', instance.userDir);
+  writeNotNull('content', instance.content);
+  writeNotNull('contentDir', instance.contentDir);
+  return val;
+}

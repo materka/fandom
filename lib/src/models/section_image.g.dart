@@ -12,3 +12,17 @@ SectionImage _$SectionImageFromJson(Map<String, dynamic> json) {
     json['caption'] as String,
   );
 }
+
+Map<String, dynamic> _$SectionImageToJson(SectionImage instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('src', instance.src);
+  writeNotNull('caption', instance.caption);
+  return val;
+}

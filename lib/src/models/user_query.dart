@@ -6,10 +6,10 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'user_query.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class UserQuery {
   /// Wikia user ID
-  final int id;
+  final String id; // TODO: API Doc says type int but return String
 
   /// Wikia user name (it can contain space characters)
   final String name;
@@ -18,4 +18,5 @@ class UserQuery {
 
   factory UserQuery.fromJson(Map<String, dynamic> json) =>
       _$UserQueryFromJson(json);
+  Map<String, dynamic> toJson() => _$UserQueryToJson(this);
 }

@@ -1,0 +1,48 @@
+{
+  "items": {
+    "2233": {
+      "id": 2233,
+      "wordmark": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/89/Wiki-wordmark.png/revision/latest?cb=20171211101516",
+      "title": "Marvel Database",
+      "url": "https://marvel.fandom.com",
+      "stats": {
+        "edits": 5629824,
+        "articles": 254899,
+        "pages": 1233169,
+        "users": 25798924,
+        "activeUsers": -1,
+        "images": 246686,
+        "videos": 1722,
+        "admins": 26,
+        "discussions": 52314
+      },
+      "topUsers": [
+        24800939,
+        25395047,
+        112155,
+        16461120,
+        764333,
+        4651179,
+        11220539,
+        39545992,
+        5315736
+      ],
+      "founding_user_id": "166",
+      "creation_date": "2006-11-20 00:00:00",
+      "headline": "Marvel Database Project",
+      "name": "Marvel Database",
+      "domain": "marvel.fandom.com",
+      "hub": "Movies",
+      "lang": "en",
+      "topic": "Movies",
+      "flags": [],
+      "desc": "With more than 250,000 articles, the Marvel Comics Database is the largest Marvel encyclopedia ever written, as well as being one of the five largest wiki on Fandom. The Database covers comics, characters, teams, games, television shows, movies, and more. Browse one of nearly 70,000 character pages, over 50,000 comics, or nearly 250,000 images in our galleries. There's something for every fan!",
+      "image": "https://images.wikia.nocookie.net/__cb20190102005710/marveldatabase/images/8/89/Wiki-wordmark.png",
+      "wam_score": "99.6857",
+      "original_dimensions": {
+        "width": 250,
+        "height": 65
+      }
+    }
+  }
+}

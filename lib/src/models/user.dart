@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'user.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class User {
   /// Wikia user name (it can contain space characters)
   final String name;
@@ -24,7 +24,7 @@ class User {
   final int userId;
 
   /// Total number of edits made by user on the current wiki
-  /// @JsonKey(name: 'numberofedits')
+  @JsonKey(name: 'numberofedits')
   final int numberOfEdits;
 
   /// Wikia user login
@@ -38,4 +38,6 @@ class User {
       this.title, this.isSubjectToCCPA);
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
+
+  Map<String, dynamic> toJson() => _$UserToJson(this);
 }

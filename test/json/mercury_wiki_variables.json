@@ -1,0 +1,353 @@
+{
+  "data": {
+    "vertical": "movies",
+    "appleTouchIcon": {
+      "url": "https://vignette.wikia.nocookie.net/marveldatabase/images/b/bc/Wiki.png/revision/latest?cb=20080730054212",
+      "size": "147x155"
+    },
+    "articlePath": "/wiki/",
+    "basePath": "https://marvel.fandom.com",
+    "dbName": "enmarveldatabase",
+    "favicon": "https://vignette.wikia.nocookie.net/marveldatabase/images/6/64/Favicon.ico/revision/latest?cb=20160609221240",
+    "id": 2233,
+    "isClosed": false,
+    "language": {
+      "content": "en",
+      "contentDir": "ltr"
+    },
+    "scriptPath": "",
+    "siteName": "Marvel Database",
+    "surrogateKey": "wiki-2233",
+    "cacheBuster": 1596187968367,
+    "cdnRootUrl": "https://slot1-images.wikia.nocookie.net",
+    "contentNamespaces": [
+      0,
+      116,
+      "118",
+      "124",
+      "124",
+      "125",
+      "126"
+    ],
+    "defaultSkin": "oasis",
+    "localNav": [
+      {
+        "text": "Hubs",
+        "href": "#",
+        "children": [
+          {
+            "text": "Comics",
+            "href": "/wiki/Hub:Comics"
+          },
+          {
+            "text": "Events",
+            "href": "/wiki/Hub:Events"
+          },
+          {
+            "text": "Games",
+            "href": "/wiki/Hub:Games"
+          },
+          {
+            "text": "Movies",
+            "href": "/wiki/Hub:Movies"
+          },
+          {
+            "text": "TV",
+            "href": "/wiki/Hub:TV"
+          }
+        ]
+      },
+      {
+        "text": "Characters",
+        "href": "/wiki/Category:Characters",
+        "children": [
+          {
+            "text": "Heroes",
+            "href": "#",
+            "children": [
+              {
+                "text": "Spider-Man (Peter Parker)",
+                "href": "/wiki/Peter_Parker_(Earth-616)"
+              },
+              {
+                "text": "Iron Man (Tony Stark)",
+                "href": "/wiki/Anthony_Stark_(Earth-616)"
+              },
+              {
+                "text": "Captain America (Steve Rogers)",
+                "href": "/wiki/Steven_Rogers_(Earth-616)"
+              },
+              {
+                "text": "Hulk (Bruce Banner)",
+                "href": "/wiki/Bruce_Banner_(Earth-616)"
+              },
+              {
+                "text": "Wolverine (Logan)",
+                "href": "/wiki/James_Howlett_(Earth-616)"
+              },
+              {
+                "text": "Deadpool (Wade Wilson)",
+                "href": "/wiki/Wade_Wilson_(Earth-616)"
+              }
+            ]
+          },
+          {
+            "text": "Villains",
+            "href": "#",
+            "children": [
+              {
+                "text": "Loki Laufeyson",
+                "href": "/wiki/Loki_Laufeyson_(Earth-616)"
+              },
+              {
+                "text": "Magneto (Max Eisenhardt)",
+                "href": "/wiki/Max_Eisenhardt_(Earth-616)"
+              },
+              {
+                "text": "Green Goblin (Norman Osborn)",
+                "href": "/wiki/Norman_Osborn_(Earth-616)"
+              },
+              {
+                "text": "Red Skull (Johann Shmidt)",
+                "href": "/wiki/Johann_Shmidt_(Earth-616)"
+              },
+              {
+                "text": "Thanos",
+                "href": "/wiki/Thanos_(Earth-616)"
+              }
+            ]
+          },
+          {
+            "text": "Random Character",
+            "href": "/wiki/Special:RandomInCategory/Characters"
+          }
+        ]
+      },
+      {
+        "text": "Comics",
+        "href": "/wiki/Category:Comics",
+        "children": [
+          {
+            "text": "All Comics",
+            "href": "/wiki/Contents"
+          },
+          {
+            "text": "Essential Reading",
+            "href": "#",
+            "children": [
+              {
+                "text": "Fantastic Four #1",
+                "href": "/wiki/Fantastic_Four_Vol_1_1"
+              },
+              {
+                "text": "Amazing Fantasy #15 (Spider-Man's First Appearance)",
+                "href": "/wiki/Amazing_Fantasy_Vol_1_15"
+              },
+              {
+                "text": "Tales of Suspense #39 (Iron Man's First Appearance)",
+                "href": "/wiki/Tales_of_Suspense_Vol_1_39"
+              },
+              {
+                "text": "Avengers #1",
+                "href": "/wiki/Avengers_Vol_1_1"
+              },
+              {
+                "text": "Incredible Hulk #181 (Wolverine's First Appearance)",
+                "href": "/wiki/Incredible_Hulk_Vol_1_181"
+              }
+            ]
+          },
+          {
+            "text": "Random Comic",
+            "href": "/wiki/Special:RandomInCategory/Comics"
+          },
+          {
+            "text": "Imprints",
+            "href": "/wiki/Marvel_publishers",
+            "children": [
+              {
+                "text": "MAX",
+                "href": "/wiki/MAX"
+              },
+              {
+                "text": "Epic",
+                "href": "/wiki/Epic_Comics"
+              },
+              {
+                "text": "Icon",
+                "href": "/wiki/Icon_Comics"
+              },
+              {
+                "text": "See More...",
+                "href": "/wiki/Marvel_publishers"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Community",
+        "href": "#",
+        "children": [
+          {
+            "text": "Connect With Us",
+            "href": "#",
+            "children": [
+              {
+                "text": "Chat",
+                "href": "/wiki/Special:Chat"
+              },
+              {
+                "text": "Facebook",
+                "href": "http://www.facebook.com/marveldatabase"
+              },
+              {
+                "text": "Forums",
+                "href": "/wiki/Special:Forum"
+              },
+              {
+                "text": "Stan's Soapbox",
+                "href": "/wiki/Marvel_Database:Stan%27s_Soapbox"
+              },
+              {
+                "text": "Twitter",
+                "href": "https://twitter.com/MarvelDatabase"
+              }
+            ]
+          },
+          {
+            "text": "Need Help?",
+            "href": "#",
+            "children": [
+              {
+                "text": "Find an Administrator",
+                "href": "/wiki/Marvel_Database:Administrators"
+              },
+              {
+                "text": "Learn the Basics",
+                "href": "/wiki/Help:Contents"
+              },
+              {
+                "text": "Policies and Guidelines",
+                "href": "/wiki/Marvel_Database:Policies_and_Guidelines"
+              },
+              {
+                "text": "Glossary of Comic Terms",
+                "href": "/wiki/Glossary:Contents"
+              },
+              {
+                "text": "Ask on the Forums",
+                "href": "/wiki/Special:Forum"
+              }
+            ]
+          },
+          {
+            "text": "Achievements",
+            "href": "#",
+            "children": [
+              {
+                "text": "Leaderboard",
+                "href": "/wiki/Special:Leaderboard"
+              },
+              {
+                "text": "List of Badges",
+                "href": "/wiki/Help:Badge_List"
+              }
+            ]
+          },
+          {
+            "text": "Sister Sites",
+            "href": "#",
+            "children": [
+              {
+                "text": "DC Comics Database",
+                "href": "http://www.dc.wikia.com/Main_Page"
+              },
+              {
+                "text": "Image Comics Database",
+                "href": "http://www.imagecomics.wikia.com/Main_Page"
+              },
+              {
+                "text": "Dark Horse Comics Database",
+                "href": "http://www.darkhorse.wikia.com/Main_Page"
+              },
+              {
+                "text": "Malibu Comics Database",
+                "href": "http://www.malibucomicsdatabase.wikia.com/Main_Page"
+              }
+            ]
+          },
+          {
+            "text": "Discussions",
+            "href": "http://marvel.wikia.com/d/f"
+          }
+        ]
+      }
+    ],
+    "mainPageTitle": "Marvel_Database",
+    "namespaces": {
+      "0": "",
+      "1": "Talk",
+      "2": "User",
+      "3": "User_talk",
+      "4": "Marvel_Database",
+      "5": "Marvel_Database_talk",
+      "6": "File",
+      "7": "File_talk",
+      "8": "MediaWiki",
+      "9": "MediaWiki_talk",
+      "10": "Template",
+      "11": "Template_talk",
+      "12": "Help",
+      "13": "Help_talk",
+      "14": "Category",
+      "15": "Category_talk",
+      "100": "Merge",
+      "101": "Merge_talk",
+      "110": "Forum",
+      "111": "Forum_talk",
+      "112": "News",
+      "113": "News_talk",
+      "114": "Blogs",
+      "115": "Blogs_talk",
+      "116": "Comics",
+      "117": "Comics_talk",
+      "118": "Glossary",
+      "119": "Glossary_talk",
+      "120": "Minor",
+      "121": "Minor_talk",
+      "122": "Instant_Expert",
+      "123": "Instant_Expert_talk",
+      "124": "Portal",
+      "125": "Portal_talk",
+      "126": "Portal",
+      "127": "Portal_talk",
+      "500": "User_blog",
+      "501": "User_blog_comment",
+      "502": "Blog",
+      "503": "Blog_talk",
+      "828": "Module",
+      "829": "Module_talk",
+      "1200": "Message_Wall",
+      "1201": "Thread",
+      "1202": "Message_Wall_Greeting",
+      "2000": "Board",
+      "2001": "Board_Thread",
+      "2002": "Topic",
+      "-2": "Media",
+      "-1": "Special"
+    },
+    "qualarooUrl": "//s3.amazonaws.com/ki.js/52510/gQT.js",
+    "recommendedVideoPlaylist": "",
+    "recommendedVideoRelatedMediaId": "WNcPjgNz",
+    "siteMessage": "Marvel Comics Database",
+    "twitterAccount": "@getfandom",
+    "wikiCategories": [
+      "tv",
+      "comics",
+      "movies"
+    ],
+    "isGASpecialWiki": true,
+    "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/89/Wiki-wordmark.png/revision/latest/window-crop/width/500/x-offset/94/y-offset/0/window-width/66/window-height/65?cb=20190102005710"
+  }
+}

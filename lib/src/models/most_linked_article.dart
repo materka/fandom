@@ -8,16 +8,18 @@ import 'article.dart';
 
 part 'most_linked_article.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class MostLinkedArticle extends Article {
   /// Number of backlinks for the article
   @JsonKey(name: 'backlink_cnt')
   final int backlinkCount;
 
   MostLinkedArticle(
-      int id, String title, String url, int ns, this.backlinkCount)
+      String id, String title, String url, int ns, this.backlinkCount)
       : super(id, title, url, ns);
 
   factory MostLinkedArticle.fromJson(Map<String, dynamic> json) =>
       _$MostLinkedArticleFromJson(json);
+
+  Map<String, dynamic> toJson() => _$MostLinkedArticleToJson(this);
 }

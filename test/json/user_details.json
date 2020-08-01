@@ -1,0 +1,13 @@
+{
+  "basepath": "https://marvel.fandom.com",
+  "items": [
+    {
+      "user_id": 12345,
+      "title": "Wolveria",
+      "name": "Wolveria",
+      "url": "/wiki/User:Wolveria",
+      "numberofedits": 0,
+      "avatar": "https://vignette.wikia.nocookie.net/messaging/images/1/19/Avatar.jpg/revision/latest/scale-to-width-down/100"
+    }
+  ]
+}

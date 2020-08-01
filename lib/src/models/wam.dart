@@ -8,22 +8,22 @@ import 'admin.dart';
 
 part 'wam.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class Wam {
   /// WAM Score
-  final double wam;
+  final String wam;
 
   /// The number of weeks that the Wiki has been in the top 1000 Wikis
   @JsonKey(name: 'top_1k_weeks')
-  final int top1kWeeks;
+  final String top1kWeeks;
 
   /// Wiki WAM rank within its hub
   @JsonKey(name: 'hub_wam_rank')
-  final int hubWamRank;
+  final String hubWamRank;
 
   /// WAM ranking
   @JsonKey(name: 'wam_rank')
-  final int wamRank;
+  final String wamRank;
 
   /// The first date that the Wiki achieved its [peakWamRank]
   @JsonKey(name: 'first_peak')
@@ -50,37 +50,43 @@ class Wam {
   /// 1 - Wiki was not classified on wam_previous_day,
   /// 0 - This wiki was in index
   @JsonKey(name: 'wam_is_new')
-  final int wamIsNew;
+  final String wamIsNew;
 
   /// The peak WAM Rank achieved by this Wiki
   @JsonKey(name: 'peak_wam_rank')
-  final int peakWamRank;
+  final String peakWamRank;
 
   /// WAM score change from wam_previous_day
   @JsonKey(name: 'wam_change')
-  final double wamChange;
+  final String wamChange;
 
   /// The number of days that the Wiki has been in the top 1000 Wikis
   @JsonKey(name: 'top_1k_days')
-  final int top1kDays;
+  final String top1kDays;
 
   /// Peak WAM Rank within its Hub
   @JsonKey(name: 'peak_hub_wam_rank')
-  final int peakHubWamRank;
+  final String peakHubWamRank;
 
   /// An internal identification number for Wikia
   @JsonKey(name: 'wiki_id')
-  final int wikiId;
+  final String wikiId;
 
   /// Wiki title
   final String title;
 
   /// An internal identification number for a Vertical
   @JsonKey(name: 'vertical_id')
-  final int verticalId;
+  final String verticalId;
 
   @JsonKey(name: 'peak_vertical_wam_rank')
-  final int peakVerticalWamRank;
+  final String peakVerticalWamRank;
+
+  @JsonKey(name: 'vertical_name')
+  final String verticalName;
+
+  @JsonKey(name: 'vertical_wam_rank')
+  final String verticalWamRank;
 
   Wam(
       this.wam,
@@ -101,7 +107,11 @@ class Wam {
       this.wikiId,
       this.title,
       this.verticalId,
-      this.peakVerticalWamRank);
+      this.peakVerticalWamRank,
+      this.verticalName,
+      this.verticalWamRank);
 
   factory Wam.fromJson(Map<String, dynamic> json) => _$WamFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WamToJson(this);
 }

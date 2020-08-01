@@ -9,7 +9,7 @@ import 'wikia_info.dart';
 
 part 'hub_article_result.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true)
 class HubArticleResult {
   /// Wikia info object
   final WikiaInfo wikia;
@@ -20,4 +20,6 @@ class HubArticleResult {
 
   factory HubArticleResult.fromJson(Map<String, dynamic> json) =>
       _$HubArticleResultFromJson(json);
+
+  Map<String, dynamic> toJson() => _$HubArticleResultToJson(this);
 }

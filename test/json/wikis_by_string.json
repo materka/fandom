@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "id": "2233",
+      "name": "Marvel Database",
+      "hub": "Lifestyle",
+      "language": "en",
+      "domain": "marvel.fandom.com"
+    },
+    {
+      "id": "2234",
+      "name": "Marvel Database",
+      "language": "nl",
+      "domain": "marvel.fandom.com/nl"
+    }
+  ],
+  "next": 2,
+  "total": 250,
+  "batches": 125,
+  "currentBatch": 1
+}

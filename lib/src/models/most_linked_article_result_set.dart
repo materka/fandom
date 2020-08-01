@@ -8,11 +8,13 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'most_linked_article_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class MostLinkedArticleResultSet extends ResultSet<MostLinkedArticle> {
   MostLinkedArticleResultSet(List<MostLinkedArticle> items, String basePath)
       : super(items, basePath);
 
   factory MostLinkedArticleResultSet.fromJson(Map<String, dynamic> json) =>
       _$MostLinkedArticleResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$MostLinkedArticleResultSetToJson(this);
 }

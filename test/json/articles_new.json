@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "id": 1447497,
+      "ns": 0,
+      "title": "Knightwing Restorations Inc. Office/Gallery",
+      "abstract": "Location Gallery: Knightwing Restorations Inc. Office This page contains all images on the database pertaining to this location or subject. If you have found an image that exists on the database...",
+      "quality": 67,
+      "url": "/wiki/Knightwing_Restorations_Inc._Office/Gallery",
+      "creator": {
+        "avatar": "https://vignette.wikia.nocookie.net/1fd9a4f1-a908-47e2-b475-dfac2e57a864/scale-to-width-down/20",
+        "name": "Jasonmaia"
+      },
+      "creation_date": "20200801145343",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/9/9f/Nightwing_Restorations_from_Heroes_for_Hire_Vol_3_5_0001.jpg/revision/latest/window-crop/width/200/x-offset/225/y-offset/0/window-width/462/window-height/461?cb=20200801145220",
+      "original_dimensions": {
+        "width": 909,
+        "height": 461
+      }
+    },
+    {
+      "id": 1447492,
+      "ns": 0,
+      "title": "Weill Cornell Medicine/Gallery",
+      "abstract": "Location Gallery: Weill Cornell Medicine This page contains all images on the database pertaining to this location or subject. If you have found an image that exists on the database, but that is...",
+      "quality": 64,
+      "url": "/wiki/Weill_Cornell_Medicine/Gallery",
+      "creator": {
+        "avatar": "https://vignette.wikia.nocookie.net/1fd9a4f1-a908-47e2-b475-dfac2e57a864/scale-to-width-down/20",
+        "name": "Jasonmaia"
+      },
+      "creation_date": "20200801145006",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/2/2f/Cornell_Medical_Center_from_Heroes_for_Hire_Vol_3_5_0001.jpg/revision/latest/window-crop/width/200/x-offset/301/y-offset/0/window-width/302/window-height/301?cb=20200801144115",
+      "original_dimensions": {
+        "width": 900,
+        "height": 301
+      }
+    }
+  ],
+  "basepath": "https://marvel.fandom.com"
+}

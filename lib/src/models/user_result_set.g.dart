@@ -12,6 +12,20 @@ UserResultSet _$UserResultSetFromJson(Map<String, dynamic> json) {
         ?.map(
             (e) => e == null ? null : User.fromJson(e as Map<String, dynamic>))
         ?.toList(),
-    json['basePath'] as String,
+    json['basepath'] as String,
   );
+}
+
+Map<String, dynamic> _$UserResultSetToJson(UserResultSet instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('items', instance.items?.map((e) => e?.toJson())?.toList());
+  writeNotNull('basepath', instance.basePath);
+  return val;
 }

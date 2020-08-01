@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'wikia.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class Wikia {
   /// Wikia name
   final String name;
@@ -15,7 +15,7 @@ class Wikia {
   final String domain;
 
   /// An internal identification number for Wikia
-  final int id;
+  final String id;
 
   ///  Wikia language
   final String language;
@@ -29,4 +29,6 @@ class Wikia {
   Wikia(this.name, this.domain, this.id, this.language, this.hub, this.topic);
 
   factory Wikia.fromJson(Map<String, dynamic> json) => _$WikiaFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WikiaToJson(this);
 }

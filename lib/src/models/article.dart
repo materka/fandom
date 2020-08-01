@@ -6,10 +6,11 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'article.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class Article {
   /// An internal identification number for the article
-  final int id;
+  /// May be either type String or int
+  final dynamic id;
 
   /// The title of the article
   final String title;
@@ -26,4 +27,6 @@ class Article {
 
   factory Article.fromJson(Map<String, dynamic> json) =>
       _$ArticleFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ArticleToJson(this);
 }

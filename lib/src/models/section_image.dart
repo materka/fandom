@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'section_image.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class SectionImage {
   /// Absolute image URL
   final String src;
@@ -18,4 +18,6 @@ class SectionImage {
 
   factory SectionImage.fromJson(Map<String, dynamic> json) =>
       _$SectionImageFromJson(json);
+
+  Map<String, dynamic> toJson() => _$SectionImageToJson(this);
 }

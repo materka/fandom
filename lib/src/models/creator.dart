@@ -18,4 +18,6 @@ class Creator {
 
   factory Creator.fromJson(Map<String, dynamic> json) =>
       _$CreatorFromJson(json);
+
+  Map<String, dynamic> toJson() => _$CreatorToJson(this);
 }

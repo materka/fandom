@@ -25,3 +25,25 @@ NewArticle _$NewArticleFromJson(Map<String, dynamic> json) {
     json['title'] as String,
   );
 }
+
+Map<String, dynamic> _$NewArticleToJson(NewArticle instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('quality', instance.quality);
+  writeNotNull('original_dimensions', instance.originalDimensions?.toJson());
+  writeNotNull('url', instance.url);
+  writeNotNull('ns', instance.ns);
+  writeNotNull('abstract', instance.abstract);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('thumbnail', instance.thumbnail);
+  writeNotNull('creation_date', instance.creationDate);
+  writeNotNull('id', instance.id);
+  writeNotNull('title', instance.title);
+  return val;
+}

@@ -9,7 +9,7 @@ import 'result_set.dart';
 
 part 'expanded_wikia_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ExpandedWikiaResultSet extends ResultSet<ExpandedWikia> {
   /// Total number of batches
   final int batches;
@@ -29,4 +29,6 @@ class ExpandedWikiaResultSet extends ResultSet<ExpandedWikia> {
 
   factory ExpandedWikiaResultSet.fromJson(Map<String, dynamic> json) =>
       _$ExpandedWikiaResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ExpandedWikiaResultSetToJson(this);
 }

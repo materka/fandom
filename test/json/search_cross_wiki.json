@@ -1,0 +1,36 @@
+{
+  "total": 1126,
+  "batches": 40,
+  "currentBatch": 1,
+  "next": 51,
+  "items": [
+    {
+      "id": "769861",
+      "title": "Rust Wiki",
+      "url": "https://rust.fandom.com/",
+      "topic": "Games",
+      "desc": "This wiki is dedicated to the game \"Rust\" by Helk and Pat of Facepunch Studios.\nEverything here is created and submitted by users and testers of Rust.\nIf you feel like contributing to our wiki: please upload information or pictures, make guides, and mostly anything can help this wiki if it contributes to it.",
+      "stats": {
+        "articles": 1000,
+        "images": 1000,
+        "videos": 10
+      },
+      "image": "https://community.fandom.com/extensions/wikia/Search/images/fandom_image_placeholder.jpg",
+      "language": "en"
+    },
+    {
+      "id": "4055",
+      "title": "One Tree Hill Wiki",
+      "url": "https://onetreehill.fandom.com/",
+      "topic": "TV",
+      "desc": "One Tree Hill Wiki is an encyclopedia about One Tree Hill, a teen/young adult drama series created by Mark Schwahn. The series chronicled the lives of five high school friends, living in Tree Hill, whose lives collided when Lucas Scott joined his half-brother Nathan's high school basketball team. The initial animosity between the brothers, fueled by the influence of their often regretful parents, sparked a major confrontation which became thrice as fierce when three beautiful girls became further entwined in the brothers' lives. Lucas' best friend Haley James tested her loyalties and slowly started to fall for Nathan after breaking through his bad-boy persona; Peyton Sawyer struggled to choose between her head and her heart when it came to Lucas - even more so when her best friend, party-girl Brooke Davis, finally removed her facade and truly fell for the one-time outsider. All the lives of the five teenagers, and their friends, collided and drama was certain to follow.",
+      "stats": {
+        "articles": 800,
+        "images": 5000,
+        "videos": 10
+      },
+      "image": "https://vignette.wikia.nocookie.net/onetreehill/images/0/05/Wikia-Visualization-Main%2Conetreehill.png/revision/latest/window-crop/width/500/x-offset/0/y-offset/38/window-width/1024/window-height/683?cb=20161102142353",
+      "language": "en"
+    }
+  ]
+}

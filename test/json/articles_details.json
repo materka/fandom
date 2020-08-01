@@ -1,0 +1,25 @@
+{
+  "items": {
+    "12345": {
+      "id": 12345,
+      "title": "Strange Tales Vol 1 114",
+      "ns": 0,
+      "url": "/wiki/Strange_Tales_Vol_1_114",
+      "revision": {
+        "id": 5217751,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1576073023"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "After a training session with his sister, the Human Torch learns of an antique car show which...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/6/67/Strange_Tales_Vol_1_114.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1158/window-height/1158?cb=20171225224922",
+      "original_dimensions": {
+        "width": 1158,
+        "height": 1725
+      }
+    }
+  },
+  "basepath": "https://marvel.fandom.com"
+}

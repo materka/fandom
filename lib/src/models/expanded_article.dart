@@ -9,7 +9,7 @@ import 'revision.dart';
 
 part 'expanded_article.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ExpandedArticle {
   /// The original dimensions of the thumbnail for the article, if available
   @JsonKey(name: 'original_dimensions')
@@ -58,4 +58,6 @@ class ExpandedArticle {
 
   factory ExpandedArticle.fromJson(Map<String, dynamic> json) =>
       _$ExpandedArticleFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ExpandedArticleToJson(this);
 }

@@ -24,4 +24,6 @@ class WikiaInfo {
 
   factory WikiaInfo.fromJson(Map<String, dynamic> json) =>
       _$WikiaInfoFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WikiaInfoToJson(this);
 }

@@ -13,8 +13,16 @@ HubArticle _$HubArticleFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$HubArticleToJson(HubArticle instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'ns': instance.ns,
-    };
+Map<String, dynamic> _$HubArticleToJson(HubArticle instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('ns', instance.ns);
+  return val;
+}

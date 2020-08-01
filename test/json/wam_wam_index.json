@@ -1,0 +1,144 @@
+{
+  "wam_index": {
+    "848": {
+      "wiki_id": "848",
+      "wam": "0.0173",
+      "wam_rank": "4998",
+      "hub_wam_rank": "2011",
+      "vertical_wam_rank": "2011",
+      "peak_wam_rank": "346",
+      "peak_hub_wam_rank": "145",
+      "peak_vertical_wam_rank": "175",
+      "top_1k_days": "1593",
+      "top_1k_weeks": "186",
+      "first_peak": "2012-09-07",
+      "last_peak": "2012-09-07",
+      "hub_name": "Games",
+      "vertical_id": "2",
+      "wam_change": "-0.3137",
+      "wam_is_new": "0",
+      "vertical_name": "Games",
+      "url": "https://mtg.fandom.com",
+      "title": "Magic: The Gathering Wiki",
+      "admins": [
+        {
+          "avatarUrl": "https://vignette.wikia.nocookie.net/d3d143a2-2a41-4d86-8baf-a6631e3886e8/scale-to-width-down/28",
+          "edits": 0,
+          "name": "HolyCrap WOTF",
+          "userPageUrl": "https://mtg.fandom.com/wiki/User:HolyCrap_WOTF",
+          "userContributionsUrl": "https://mtg.fandom.com/wiki/Special:Contributions/HolyCrap_WOTF",
+          "userId": "24832379",
+          "lastRevision": "20200514140824",
+          "since": "Feb 2016"
+        },
+        {
+          "avatarUrl": "https://static.wikia.nocookie.net/159546d0-01d1-4945-9903-6a2491443c74/scale-to-width-down/28",
+          "edits": 0,
+          "name": "Yandere-sliver",
+          "userPageUrl": "https://mtg.fandom.com/wiki/User:Yandere-sliver",
+          "userContributionsUrl": "https://mtg.fandom.com/wiki/Special:Contributions/Yandere-sliver",
+          "userId": "37878876",
+          "lastRevision": "20190430172028",
+          "since": "Dec 2018"
+        },
+        {
+          "avatarUrl": "https://vignette.wikia.nocookie.net/56fe48ef-0d53-42c0-b1a5-e7b0b05bc0a3/scale-to-width-down/28",
+          "edits": 0,
+          "name": "Dv54321",
+          "userPageUrl": "https://mtg.fandom.com/wiki/User:Dv54321",
+          "userContributionsUrl": "https://mtg.fandom.com/wiki/Special:Contributions/Dv54321",
+          "userId": "25805803",
+          "lastRevision": "20190326205521",
+          "since": "Apr 2015"
+        },
+        {
+          "avatarUrl": "https://vignette.wikia.nocookie.net/messaging/images/7/76/Avatar5.jpg/revision/latest/scale-to-width-down/28?format=jpg",
+          "edits": 0,
+          "name": "Artix Kreiger",
+          "userPageUrl": "https://mtg.fandom.com/wiki/User:Artix_Kreiger",
+          "userContributionsUrl": "https://mtg.fandom.com/wiki/Special:Contributions/Artix_Kreiger",
+          "userId": "33723115",
+          "lastRevision": "20190326185954",
+          "since": "Sep 2018"
+        },
+        {
+          "avatarUrl": "https://static.wikia.nocookie.net/838a1cdd-14c5-4c13-8fd3-ee8155acdbdc/scale-to-width-down/28",
+          "edits": 0,
+          "name": "StalkingVengeance",
+          "userPageUrl": "https://mtg.fandom.com/wiki/User:StalkingVengeance",
+          "userContributionsUrl": "https://mtg.fandom.com/wiki/Special:Contributions/StalkingVengeance",
+          "userId": "26527155",
+          "lastRevision": "20181221191931",
+          "since": "May 2016"
+        }
+      ],
+      "wiki_image": "https://vignette.wikia.nocookie.net/wikiaglobal/images/e/e1/Wikia-Visualization-Main%2Cmtg.png/revision/latest/scale-to-width-down/150?cb=20140530091603&format=jpg"
+    },
+    "89404": {
+      "wiki_id": "89404",
+      "wam": "0.0049",
+      "wam_rank": "4999",
+      "hub_wam_rank": "2012",
+      "vertical_wam_rank": "2012",
+      "peak_wam_rank": "666",
+      "peak_hub_wam_rank": "264",
+      "peak_vertical_wam_rank": "354",
+      "top_1k_days": "289",
+      "top_1k_weeks": "41",
+      "first_peak": "2012-12-21",
+      "last_peak": "2012-12-22",
+      "hub_name": "Games",
+      "vertical_id": "2",
+      "wam_change": "-1.9756",
+      "wam_is_new": "0",
+      "vertical_name": "Games",
+      "url": "https://assassinscreed.fandom.com/pt-br/",
+      "title": "Assassin's Creed Wiki",
+      "admins": [
+        {
+          "avatarUrl": "https://static.wikia.nocookie.net/6facf9b4-3605-473f-9b76-d86d0694b45a/scale-to-width-down/28",
+          "edits": 1,
+          "name": "MatheusCormac",
+          "userPageUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Usu%C3%A1rio:MatheusCormac",
+          "userContributionsUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Especial:Contributions/MatheusCormac",
+          "userId": "27545635",
+          "lastRevision": "20200625012829",
+          "since": "Jul 2016"
+        },
+        {
+          "avatarUrl": "https://static.wikia.nocookie.net/d0076b91-777b-4a8b-a1db-e6d3c109e5be/scale-to-width-down/28",
+          "edits": 0,
+          "name": "LeFaith",
+          "userPageUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Usu%C3%A1rio:LeFaith",
+          "userContributionsUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Especial:Contributions/LeFaith",
+          "userId": "44308077",
+          "lastRevision": "20200708184317",
+          "since": "Nov 2019"
+        },
+        {
+          "avatarUrl": "https://vignette.wikia.nocookie.net/a8b7b51f-959c-4bed-bf08-362d9cce08c6/scale-to-width-down/28",
+          "edits": 0,
+          "name": "Master of the Night",
+          "userPageUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Usu%C3%A1rio:Master_of_the_Night",
+          "userContributionsUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Especial:Contributions/Master_of_the_Night",
+          "userId": "26827980",
+          "lastRevision": "20200419163511",
+          "since": "Apr 2016"
+        },
+        {
+          "avatarUrl": "https://static.wikia.nocookie.net/72b4d5ed-4b30-40be-ae2f-2d325fa93068/scale-to-width-down/28",
+          "edits": 0,
+          "name": "Ultragustavo25",
+          "userPageUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Usu%C3%A1rio:Ultragustavo25",
+          "userContributionsUrl": "https://assassinscreed.fandom.com/pt-br/wiki/Especial:Contributions/Ultragustavo25",
+          "userId": "5653518",
+          "lastRevision": "20200418232514",
+          "since": "Apr 2020"
+        }
+      ]
+    }
+  },
+  "wam_results_total": "2009",
+  "wam_index_date": 1596153600,
+  "wam_actual_date": 1596240000
+}

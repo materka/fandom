@@ -8,7 +8,7 @@ import 'wiki_data.dart';
 
 part 'wiki_data_container.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class WikiDataContainer {
   final WikiData data;
 
@@ -16,4 +16,6 @@ class WikiDataContainer {
 
   factory WikiDataContainer.fromJson(Map<String, dynamic> json) =>
       _$WikiDataContainerFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WikiDataContainerToJson(this);
 }

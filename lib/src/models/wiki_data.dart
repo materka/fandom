@@ -5,24 +5,23 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import 'icon.dart';
-import 'navigation.dart';
+import 'navigation_link.dart';
 import 'wiki_language_data.dart';
 
 part 'wiki_data.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class WikiData {
   final int cacheBuster;
   final String dbName;
   final String defaultSkin;
   final int id;
   final WikiLanguageData language;
-  final dynamic namespaces;
-  @JsonKey(name: 'sitename')
+  final Map<String, String> namespaces;
   final String siteName;
   final String mainPageTitle;
   final List<String> wikiCategories;
-  final Navigation localNav;
+  final List<NavigationLink> localNav;
   final String vertical;
   final String basePath;
   final bool isGASpecialWiki;
@@ -42,7 +41,9 @@ class WikiData {
   final String recommendedVideoPlaylist;
   final String qualarooUrl;
   final String cdnRootUrl;
-  final List<int> contentNamespaces;
+
+  // It seems the response can contain both int and String
+  final List<dynamic> contentNamespaces;
 
   WikiData(
       this.cacheBuster,
@@ -76,4 +77,6 @@ class WikiData {
 
   factory WikiData.fromJson(Map<String, dynamic> json) =>
       _$WikiDataFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WikiDataToJson(this);
 }

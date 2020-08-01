@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'revision.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class Revision {
   /// An internal identification number for Revision
   final int id;
@@ -19,10 +19,12 @@ class Revision {
   final int userId;
 
   /// The Unix timestamp (in seconds) that the revision was made
-  final int timestamp;
+  final String timestamp;
 
   Revision(this.id, this.user, this.userId, this.timestamp);
 
   factory Revision.fromJson(Map<String, dynamic> json) =>
       _$RevisionFromJson(json);
+
+  Map<String, dynamic> toJson() => _$RevisionToJson(this);
 }

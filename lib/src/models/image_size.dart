@@ -6,13 +6,15 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'image_size.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class ImageSize {
-  final int width;
-  final int height;
+  final dynamic width;
+  final dynamic height;
 
   ImageSize(this.width, this.height);
 
   factory ImageSize.fromJson(Map<String, dynamic> json) =>
       _$ImageSizeFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ImageSizeToJson(this);
 }

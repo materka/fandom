@@ -9,11 +9,16 @@ import 'expanded_article.dart';
 
 part 'expanded_article_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ExpandedArticleResultSet extends ResultSet<ExpandedArticle> {
-  ExpandedArticleResultSet(List<ExpandedArticle> items, String basePath)
+  final String offset;
+
+  ExpandedArticleResultSet(
+      List<ExpandedArticle> items, String basePath, this.offset)
       : super(items, basePath);
 
   factory ExpandedArticleResultSet.fromJson(Map<String, dynamic> json) =>
       _$ExpandedArticleResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ExpandedArticleResultSetToJson(this);
 }

@@ -9,7 +9,7 @@ import 'wikia_stats.dart';
 
 part 'expanded_cross_wikia.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ExpandedCrossWikia {
   /// Wikia headline
   final String headline;
@@ -37,7 +37,7 @@ class ExpandedCrossWikia {
   final double wam_score;
 
   /// An internal identification number for Wikia
-  final int id;
+  final String id; // TODO: Doc API says type int but return String
 
   /// Array with ten top contributors
   final String topUsers;
@@ -49,7 +49,9 @@ class ExpandedCrossWikia {
   final String title;
 
   /// Wikia language
-  final String lang;
+  final String language;
+
+  final String topic;
 
   ExpandedCrossWikia(
       this.headline,
@@ -64,8 +66,11 @@ class ExpandedCrossWikia {
       this.topUsers,
       this.wordmark,
       this.title,
-      this.lang);
+      this.language,
+      this.topic);
 
   factory ExpandedCrossWikia.fromJson(Map<String, dynamic> json) =>
       _$ExpandedCrossWikiaFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ExpandedCrossWikiaToJson(this);
 }

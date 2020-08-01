@@ -1,0 +1,305 @@
+{
+  "basepath": "https://marvel.fandom.com",
+  "items": [
+    {
+      "id": "95210",
+      "title": "Marvel_Comics",
+      "url": "/wiki/Marvel_Comics",
+      "ns": 0
+    },
+    {
+      "id": "3490",
+      "title": "Gallery:Contents",
+      "url": "/wiki/Gallery:Contents",
+      "ns": 0
+    },
+    {
+      "id": "8696",
+      "title": "Earth-616",
+      "url": "/wiki/Earth-616",
+      "ns": 0
+    },
+    {
+      "id": "37679",
+      "title": "Homo_sapiens",
+      "url": "/wiki/Homo_sapiens",
+      "ns": 0
+    },
+    {
+      "id": "3585",
+      "title": "New_York_City",
+      "url": "/wiki/New_York_City",
+      "ns": 0
+    },
+    {
+      "id": "3586",
+      "title": "New_York_(State)",
+      "url": "/wiki/New_York_(State)",
+      "ns": 0
+    },
+    {
+      "id": "3632",
+      "title": "Earth",
+      "url": "/wiki/Earth",
+      "ns": 0
+    },
+    {
+      "id": "3769",
+      "title": "United_States_of_America",
+      "url": "/wiki/United_States_of_America",
+      "ns": 0
+    },
+    {
+      "id": "8106",
+      "title": "Manhattan",
+      "url": "/wiki/Manhattan",
+      "ns": 0
+    },
+    {
+      "id": "1678",
+      "title": "Peter_Parker_(Earth-616)",
+      "url": "/wiki/Peter_Parker_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "21472",
+      "title": "Homo_superior",
+      "url": "/wiki/Homo_superior",
+      "ns": 0
+    },
+    {
+      "id": "20530",
+      "title": "Joe_Quesada",
+      "url": "/wiki/Joe_Quesada",
+      "ns": 0
+    },
+    {
+      "id": "1292982",
+      "title": "Anthony_Stark_(Earth-616)",
+      "url": "/wiki/Anthony_Stark_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "7139",
+      "title": "Steven_Rogers_(Earth-616)",
+      "url": "/wiki/Steven_Rogers_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "64786",
+      "title": "James_Howlett_(Earth-616)",
+      "url": "/wiki/James_Howlett_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "388006",
+      "title": "Spider-Man's_Suit",
+      "url": "/wiki/Spider-Man%27s_Suit",
+      "ns": 0
+    },
+    {
+      "id": "3634",
+      "title": "Captain_America's_Shield",
+      "url": "/wiki/Captain_America%27s_Shield",
+      "ns": 0
+    },
+    {
+      "id": "304002",
+      "title": "Stan_Lee",
+      "url": "/wiki/Stan_Lee",
+      "ns": 0
+    },
+    {
+      "id": "1293103",
+      "title": "Avengers_(Earth-616)",
+      "url": "/wiki/Avengers_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "3550",
+      "title": "X-Men_(Earth-616)",
+      "url": "/wiki/X-Men_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "26026",
+      "title": "Axel_Alonso",
+      "url": "/wiki/Axel_Alonso",
+      "ns": 0
+    },
+    {
+      "id": "1293027",
+      "title": "Thor_Odinson_(Earth-616)",
+      "url": "/wiki/Thor_Odinson_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "21276",
+      "title": "Tom_DeFalco",
+      "url": "/wiki/Tom_DeFalco",
+      "ns": 0
+    },
+    {
+      "id": "1833",
+      "title": "Bruce_Banner_(Earth-616)",
+      "url": "/wiki/Bruce_Banner_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "882738",
+      "title": "Captain_America's_Uniform",
+      "url": "/wiki/Captain_America%27s_Uniform",
+      "ns": 0
+    },
+    {
+      "id": "6205",
+      "title": "Mjolnir",
+      "url": "/wiki/Mjolnir",
+      "ns": 0
+    },
+    {
+      "id": "306367",
+      "title": "Motion_Picture_Funnies_Weekly_Vol_1_1",
+      "url": "/wiki/Motion_Picture_Funnies_Weekly_Vol_1_1",
+      "ns": 0
+    },
+    {
+      "id": "2458",
+      "title": "Benjamin_Grimm_(Earth-616)",
+      "url": "/wiki/Benjamin_Grimm_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "2166",
+      "title": "Reed_Richards_(Earth-616)",
+      "url": "/wiki/Reed_Richards_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "29481",
+      "title": "Scott_Summers_(Earth-616)",
+      "url": "/wiki/Scott_Summers_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "2941",
+      "title": "Fantastic_Four_(Earth-616)",
+      "url": "/wiki/Fantastic_Four_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "5991",
+      "title": "Contents",
+      "url": "/wiki/Contents",
+      "ns": 0
+    },
+    {
+      "id": "1837",
+      "title": "Jonathan_Storm_(Earth-616)",
+      "url": "/wiki/Jonathan_Storm_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "8761",
+      "title": "Web-Shooters",
+      "url": "/wiki/Web-Shooters",
+      "ns": 0
+    },
+    {
+      "id": "129078",
+      "title": "Gallery:Location_Gallery",
+      "url": "/wiki/Gallery:Location_Gallery",
+      "ns": 0
+    },
+    {
+      "id": "6204",
+      "title": "California_(State)",
+      "url": "/wiki/California_(State)",
+      "ns": 0
+    },
+    {
+      "id": "15725",
+      "title": "Henry_McCoy_(Earth-616)",
+      "url": "/wiki/Henry_McCoy_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "7823",
+      "title": "Namor_McKenzie_(Earth-616)",
+      "url": "/wiki/Namor_McKenzie_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "2614",
+      "title": "Ororo_Munroe_(Earth-616)",
+      "url": "/wiki/Ororo_Munroe_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "25798",
+      "title": "Roy_Thomas",
+      "url": "/wiki/Roy_Thomas",
+      "ns": 0
+    },
+    {
+      "id": "1396",
+      "title": "Matthew_Murdock_(Earth-616)",
+      "url": "/wiki/Matthew_Murdock_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "20496",
+      "title": "Jim_Shooter",
+      "url": "/wiki/Jim_Shooter",
+      "ns": 0
+    },
+    {
+      "id": "55534",
+      "title": "Stephen_Strange_(Earth-616)",
+      "url": "/wiki/Stephen_Strange_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "1409",
+      "title": "Wade_Wilson_(Earth-616)",
+      "url": "/wiki/Wade_Wilson_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "18053",
+      "title": "Strategic_Homeland_Intervention,_Enforcement_and_Logistics_Division_(Earth-616)",
+      "url": "/wiki/Strategic_Homeland_Intervention,_Enforcement_and_Logistics_Division_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "1448",
+      "title": "Victor_von_Doom_(Earth-616)",
+      "url": "/wiki/Victor_von_Doom_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "65219",
+      "title": "Jean_Grey_(Earth-616)",
+      "url": "/wiki/Jean_Grey_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "1863",
+      "title": "Susan_Storm_(Earth-616)",
+      "url": "/wiki/Susan_Storm_(Earth-616)",
+      "ns": 0
+    },
+    {
+      "id": "8749",
+      "title": "Xavier's_School_for_Gifted_Youngsters",
+      "url": "/wiki/Xavier%27s_School_for_Gifted_Youngsters",
+      "ns": 0
+    },
+    {
+      "id": "1293080",
+      "title": "Clinton_Barton_(Earth-616)",
+      "url": "/wiki/Clinton_Barton_(Earth-616)",
+      "ns": 0
+    }
+  ]
+}

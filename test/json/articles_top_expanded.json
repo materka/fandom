@@ -1,0 +1,40 @@
+{
+  "basepath": "https://marvel.fandom.com",
+  "items": [
+    {
+      "id": 302773,
+      "title": "Power Grid",
+      "ns": 0,
+      "url": "/wiki/Power_Grid",
+      "revision": {
+        "id": 5347641,
+        "user": "ADour",
+        "user_id": 4651179,
+        "timestamp": "1582813854"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The Power Grid is the means by which the proficiency of any given character in six different..."
+    },
+    {
+      "id": 1678,
+      "title": "Peter Parker (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Peter_Parker_(Earth-616)",
+      "revision": {
+        "id": 5636608,
+        "user": "Jonmor93",
+        "user_id": 28397455,
+        "timestamp": "1596214079"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Peter Parker's history. For a complete history see Peter Parker's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/9/96/Friendly_Neighborhood_Spider-Man_Vol_2_8_Granov_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/640/window-height/640?cb=20190608001208",
+      "original_dimensions": {
+        "width": 640,
+        "height": 960
+      }
+    }
+  ]
+}

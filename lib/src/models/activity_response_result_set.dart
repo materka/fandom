@@ -9,11 +9,13 @@ import 'result_set.dart';
 
 part 'activity_response_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ActivityResponseResultSet extends ResultSet<ActivityResponse> {
   ActivityResponseResultSet(List<ActivityResponse> items, String basePath)
       : super(items, basePath);
 
   factory ActivityResponseResultSet.fromJson(Map<String, dynamic> json) =>
       _$ActivityResponseResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ActivityResponseResultSetToJson(this);
 }

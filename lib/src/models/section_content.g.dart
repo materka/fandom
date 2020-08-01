@@ -16,3 +16,19 @@ SectionContent _$SectionContentFromJson(Map<String, dynamic> json) {
         ?.toList(),
   );
 }
+
+Map<String, dynamic> _$SectionContentToJson(SectionContent instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('text', instance.text);
+  writeNotNull(
+      'elements', instance.elements?.map((e) => e?.toJson())?.toList());
+  return val;
+}

@@ -11,3 +11,16 @@ SearchSuggestion _$SearchSuggestionFromJson(Map<String, dynamic> json) {
     json['title'] as String,
   );
 }
+
+Map<String, dynamic> _$SearchSuggestionToJson(SearchSuggestion instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  return val;
+}

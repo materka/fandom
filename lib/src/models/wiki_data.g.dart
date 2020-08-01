@@ -15,13 +15,17 @@ WikiData _$WikiDataFromJson(Map<String, dynamic> json) {
     json['language'] == null
         ? null
         : WikiLanguageData.fromJson(json['language'] as Map<String, dynamic>),
-    json['namespaces'],
-    json['sitename'] as String,
+    (json['namespaces'] as Map<String, dynamic>)?.map(
+      (k, e) => MapEntry(k, e as String),
+    ),
+    json['siteName'] as String,
     json['mainPageTitle'] as String,
     (json['wikiCategories'] as List)?.map((e) => e as String)?.toList(),
-    json['localNav'] == null
-        ? null
-        : Navigation.fromJson(json['localNav'] as Map<String, dynamic>),
+    (json['localNav'] as List)
+        ?.map((e) => e == null
+            ? null
+            : NavigationLink.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
     json['vertical'] as String,
     json['basePath'] as String,
     json['isGASpecialWiki'] as bool,
@@ -41,6 +45,48 @@ WikiData _$WikiDataFromJson(Map<String, dynamic> json) {
     json['recommendedVideoPlaylist'] as String,
     json['qualarooUrl'] as String,
     json['cdnRootUrl'] as String,
-    (json['contentNamespaces'] as List)?.map((e) => e as int)?.toList(),
+    json['contentNamespaces'] as List,
   );
+}
+
+Map<String, dynamic> _$WikiDataToJson(WikiData instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('cacheBuster', instance.cacheBuster);
+  writeNotNull('dbName', instance.dbName);
+  writeNotNull('defaultSkin', instance.defaultSkin);
+  writeNotNull('id', instance.id);
+  writeNotNull('language', instance.language?.toJson());
+  writeNotNull('namespaces', instance.namespaces);
+  writeNotNull('siteName', instance.siteName);
+  writeNotNull('mainPageTitle', instance.mainPageTitle);
+  writeNotNull('wikiCategories', instance.wikiCategories);
+  writeNotNull(
+      'localNav', instance.localNav?.map((e) => e?.toJson())?.toList());
+  writeNotNull('vertical', instance.vertical);
+  writeNotNull('basePath', instance.basePath);
+  writeNotNull('isGASpecialWiki', instance.isGASpecialWiki);
+  writeNotNull('articlePath', instance.articlePath);
+  writeNotNull('facebookAppId', instance.facebookAppId);
+  writeNotNull('appleTouchIcon', instance.appleTouchIcon?.toJson());
+  writeNotNull('favicon', instance.favicon);
+  writeNotNull('isClosed', instance.isClosed);
+  writeNotNull('scriptPath', instance.scriptPath);
+  writeNotNull('surrogateKey', instance.surrogateKey);
+  writeNotNull('image', instance.image);
+  writeNotNull('twitterAccount', instance.twitterAccount);
+  writeNotNull('siteMessage', instance.siteMessage);
+  writeNotNull('recommendedVideoRelatedMediaId',
+      instance.recommendedVideoRelatedMediaId);
+  writeNotNull('recommendedVideoPlaylist', instance.recommendedVideoPlaylist);
+  writeNotNull('qualarooUrl', instance.qualarooUrl);
+  writeNotNull('cdnRootUrl', instance.cdnRootUrl);
+  writeNotNull('contentNamespaces', instance.contentNamespaces);
+  return val;
 }

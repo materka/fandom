@@ -58,6 +58,7 @@ class Fandom {
     var instance = Fandom._internal(baseUrl, jsonProvider);
     instance
       .._activity = ActivityResource(instance)
+      .._articles = ArticlesResource(instance)
       .._mercury = MercuryResource(instance)
       .._navigation = NavigationResource(instance)
       .._relatedPages = RelatedPagesResource(instance)

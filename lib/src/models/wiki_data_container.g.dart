@@ -13,3 +13,16 @@ WikiDataContainer _$WikiDataContainerFromJson(Map<String, dynamic> json) {
         : WikiData.fromJson(json['data'] as Map<String, dynamic>),
   );
 }
+
+Map<String, dynamic> _$WikiDataContainerToJson(WikiDataContainer instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('data', instance.data?.toJson());
+  return val;
+}

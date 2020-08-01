@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'icon.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class Icon {
   /// Image URL
   final String url;
@@ -17,4 +17,6 @@ class Icon {
   Icon(this.url, this.size);
 
   factory Icon.fromJson(Map<String, dynamic> json) => _$IconFromJson(json);
+
+  Map<String, dynamic> toJson() => _$IconToJson(this);
 }

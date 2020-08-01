@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'search_suggestion.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class SearchSuggestion {
   /// Searching article title
   final String title;
@@ -15,4 +15,6 @@ class SearchSuggestion {
 
   factory SearchSuggestion.fromJson(Map<String, dynamic> json) =>
       _$SearchSuggestionFromJson(json);
+
+  Map<String, dynamic> toJson() => _$SearchSuggestionToJson(this);
 }

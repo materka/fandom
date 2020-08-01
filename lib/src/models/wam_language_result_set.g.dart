@@ -8,6 +8,20 @@ part of 'wam_language_result_set.dart';
 
 WamLanguageResultSet _$WamLanguageResultSetFromJson(Map<String, dynamic> json) {
   return WamLanguageResultSet(
-    (json['items'] as List)?.map((e) => e as String)?.toList(),
+    (json['languages'] as List)?.map((e) => e as String)?.toList(),
   );
+}
+
+Map<String, dynamic> _$WamLanguageResultSetToJson(
+    WamLanguageResultSet instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('languages', instance.items);
+  return val;
 }

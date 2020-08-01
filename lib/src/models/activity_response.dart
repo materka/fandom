@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'activity_response.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class ActivityResponse {
   /// The ID of the article affected
   final int article;
@@ -24,4 +24,6 @@ class ActivityResponse {
 
   factory ActivityResponse.fromJson(Map<String, dynamic> json) =>
       _$ActivityResponseFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ActivityResponseToJson(this);
 }

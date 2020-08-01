@@ -1,0 +1,290 @@
+{
+  "navigation": {
+    "wikia": [
+      {
+        "text": "On the Wiki",
+        "href": "#",
+        "children": [
+          {
+            "text": "Wiki Activity",
+            "href": "/wiki/Special:WikiActivity"
+          },
+          {
+            "text": "Random page",
+            "href": "/wiki/Special:Random"
+          },
+          {
+            "text": "Videos",
+            "href": "/wiki/Special:Videos"
+          },
+          {
+            "text": "Images",
+            "href": "/wiki/Special:Images"
+          },
+          {
+            "text": "Chat",
+            "href": "/wiki/Special:Chat"
+          },
+          {
+            "text": "Forum",
+            "href": "/wiki/Special:Forum"
+          }
+        ]
+      }
+    ],
+    "wiki": [
+      {
+        "text": "Hubs",
+        "href": "#",
+        "children": [
+          {
+            "text": "Comics",
+            "href": "/wiki/Hub:Comics"
+          },
+          {
+            "text": "Events",
+            "href": "/wiki/Hub:Events"
+          },
+          {
+            "text": "Games",
+            "href": "/wiki/Hub:Games"
+          },
+          {
+            "text": "Movies",
+            "href": "/wiki/Hub:Movies"
+          },
+          {
+            "text": "TV",
+            "href": "/wiki/Hub:TV"
+          }
+        ]
+      },
+      {
+        "text": "Characters",
+        "href": "/wiki/Category:Characters",
+        "children": [
+          {
+            "text": "Heroes",
+            "href": "#",
+            "children": [
+              {
+                "text": "Spider-Man (Peter Parker)",
+                "href": "/wiki/Peter_Parker_(Earth-616)"
+              },
+              {
+                "text": "Iron Man (Tony Stark)",
+                "href": "/wiki/Anthony_Stark_(Earth-616)"
+              },
+              {
+                "text": "Captain America (Steve Rogers)",
+                "href": "/wiki/Steven_Rogers_(Earth-616)"
+              },
+              {
+                "text": "Hulk (Bruce Banner)",
+                "href": "/wiki/Bruce_Banner_(Earth-616)"
+              },
+              {
+                "text": "Wolverine (Logan)",
+                "href": "/wiki/James_Howlett_(Earth-616)"
+              },
+              {
+                "text": "Deadpool (Wade Wilson)",
+                "href": "/wiki/Wade_Wilson_(Earth-616)"
+              }
+            ]
+          },
+          {
+            "text": "Villains",
+            "href": "#",
+            "children": [
+              {
+                "text": "Loki Laufeyson",
+                "href": "/wiki/Loki_Laufeyson_(Earth-616)"
+              },
+              {
+                "text": "Magneto (Max Eisenhardt)",
+                "href": "/wiki/Max_Eisenhardt_(Earth-616)"
+              },
+              {
+                "text": "Green Goblin (Norman Osborn)",
+                "href": "/wiki/Norman_Osborn_(Earth-616)"
+              },
+              {
+                "text": "Red Skull (Johann Shmidt)",
+                "href": "/wiki/Johann_Shmidt_(Earth-616)"
+              },
+              {
+                "text": "Thanos",
+                "href": "/wiki/Thanos_(Earth-616)"
+              }
+            ]
+          },
+          {
+            "text": "Random Character",
+            "href": "/wiki/Special:RandomInCategory/Characters"
+          }
+        ]
+      },
+      {
+        "text": "Comics",
+        "href": "/wiki/Category:Comics",
+        "children": [
+          {
+            "text": "All Comics",
+            "href": "/wiki/Contents"
+          },
+          {
+            "text": "Essential Reading",
+            "href": "#",
+            "children": [
+              {
+                "text": "Fantastic Four #1",
+                "href": "/wiki/Fantastic_Four_Vol_1_1"
+              },
+              {
+                "text": "Amazing Fantasy #15 (Spider-Man's First Appearance)",
+                "href": "/wiki/Amazing_Fantasy_Vol_1_15"
+              },
+              {
+                "text": "Tales of Suspense #39 (Iron Man's First Appearance)",
+                "href": "/wiki/Tales_of_Suspense_Vol_1_39"
+              },
+              {
+                "text": "Avengers #1",
+                "href": "/wiki/Avengers_Vol_1_1"
+              },
+              {
+                "text": "Incredible Hulk #181 (Wolverine's First Appearance)",
+                "href": "/wiki/Incredible_Hulk_Vol_1_181"
+              }
+            ]
+          },
+          {
+            "text": "Random Comic",
+            "href": "/wiki/Special:RandomInCategory/Comics"
+          },
+          {
+            "text": "Imprints",
+            "href": "/wiki/Marvel_publishers",
+            "children": [
+              {
+                "text": "MAX",
+                "href": "/wiki/MAX"
+              },
+              {
+                "text": "Epic",
+                "href": "/wiki/Epic_Comics"
+              },
+              {
+                "text": "Icon",
+                "href": "/wiki/Icon_Comics"
+              },
+              {
+                "text": "See More...",
+                "href": "/wiki/Marvel_publishers"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Community",
+        "href": "#",
+        "children": [
+          {
+            "text": "Connect With Us",
+            "href": "#",
+            "children": [
+              {
+                "text": "Chat",
+                "href": "/wiki/Special:Chat"
+              },
+              {
+                "text": "Facebook",
+                "href": "http://www.facebook.com/marveldatabase"
+              },
+              {
+                "text": "Forums",
+                "href": "/wiki/Special:Forum"
+              },
+              {
+                "text": "Stan's Soapbox",
+                "href": "/wiki/Marvel_Database:Stan%27s_Soapbox"
+              },
+              {
+                "text": "Twitter",
+                "href": "https://twitter.com/MarvelDatabase"
+              }
+            ]
+          },
+          {
+            "text": "Need Help?",
+            "href": "#",
+            "children": [
+              {
+                "text": "Find an Administrator",
+                "href": "/wiki/Marvel_Database:Administrators"
+              },
+              {
+                "text": "Learn the Basics",
+                "href": "/wiki/Help:Contents"
+              },
+              {
+                "text": "Policies and Guidelines",
+                "href": "/wiki/Marvel_Database:Policies_and_Guidelines"
+              },
+              {
+                "text": "Glossary of Comic Terms",
+                "href": "/wiki/Glossary:Contents"
+              },
+              {
+                "text": "Ask on the Forums",
+                "href": "/wiki/Special:Forum"
+              }
+            ]
+          },
+          {
+            "text": "Achievements",
+            "href": "#",
+            "children": [
+              {
+                "text": "Leaderboard",
+                "href": "/wiki/Special:Leaderboard"
+              },
+              {
+                "text": "List of Badges",
+                "href": "/wiki/Help:Badge_List"
+              }
+            ]
+          },
+          {
+            "text": "Sister Sites",
+            "href": "#",
+            "children": [
+              {
+                "text": "DC Comics Database",
+                "href": "http://www.dc.wikia.com/Main_Page"
+              },
+              {
+                "text": "Image Comics Database",
+                "href": "http://www.imagecomics.wikia.com/Main_Page"
+              },
+              {
+                "text": "Dark Horse Comics Database",
+                "href": "http://www.darkhorse.wikia.com/Main_Page"
+              },
+              {
+                "text": "Malibu Comics Database",
+                "href": "http://www.malibucomicsdatabase.wikia.com/Main_Page"
+              }
+            ]
+          },
+          {
+            "text": "Discussions",
+            "href": "http://marvel.wikia.com/d/f"
+          }
+        ]
+      }
+    ]
+  }
+}

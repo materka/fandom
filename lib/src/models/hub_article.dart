@@ -18,4 +18,6 @@ class HubArticle {
 
   factory HubArticle.fromJson(Map<String, dynamic> json) =>
       _$HubArticleFromJson(json);
+
+  Map<String, dynamic> toJson() => _$HubArticleToJson(this);
 }

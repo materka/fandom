@@ -13,7 +13,23 @@ NavigationLink _$NavigationLinkFromJson(Map<String, dynamic> json) {
     (json['children'] as List)
         ?.map((e) => e == null
             ? null
-            : NavigationChildren.fromJson(e as Map<String, dynamic>))
+            : NavigationLink.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
+}
+
+Map<String, dynamic> _$NavigationLinkToJson(NavigationLink instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('href', instance.href);
+  writeNotNull(
+      'children', instance.children?.map((e) => e?.toJson())?.toList());
+  return val;
 }

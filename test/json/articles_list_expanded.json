@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": 68799,
+      "title": "\"Dog\" Logan",
+      "ns": 0,
+      "url": "/wiki/%22Dog%22_Logan",
+      "revision": {
+        "id": 5585355,
+        "user": "Uncanny X-Factor",
+        "user_id": 5927539,
+        "timestamp": "1593331189"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "REDIRECT Dog"
+    },
+    {
+      "id": 1086301,
+      "title": "\"Goblins\"",
+      "ns": 0,
+      "url": "/wiki/%22Goblins%22",
+      "revision": {
+        "id": 4205813,
+        "user": "Undoniel",
+        "user_id": 3406131,
+        "timestamp": "1508691937"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "REDIRECT Goblins (Lilith)"
+    }
+  ],
+  "basepath": "https://marvel.fandom.com",
+  "offset": "\"Mad-Dog\" Rassitano"
+}

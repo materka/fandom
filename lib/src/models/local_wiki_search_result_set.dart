@@ -9,7 +9,7 @@ import 'local_wiki_search.dart';
 
 part 'local_wiki_search_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class LocalWikiSearchResultSet extends ResultSet<LocalWikiSearch> {
   /// Number of batches (pages) of results,
   final int batches;
@@ -29,4 +29,6 @@ class LocalWikiSearchResultSet extends ResultSet<LocalWikiSearch> {
 
   factory LocalWikiSearchResultSet.fromJson(Map<String, dynamic> json) =>
       _$LocalWikiSearchResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$LocalWikiSearchResultSetToJson(this);
 }

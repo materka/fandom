@@ -9,7 +9,7 @@ import 'creator.dart';
 
 part 'new_article.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class NewArticle {
   /// Quality score of the article,
   /// ranges from 0 (low quality) to 99 (high quality)
@@ -60,4 +60,6 @@ class NewArticle {
 
   factory NewArticle.fromJson(Map<String, dynamic> json) =>
       _$NewArticleFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NewArticleToJson(this);
 }

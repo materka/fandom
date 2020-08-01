@@ -25,3 +25,25 @@ ExpandedArticle _$ExpandedArticleFromJson(Map<String, dynamic> json) {
     json['comments'] as int,
   );
 }
+
+Map<String, dynamic> _$ExpandedArticleToJson(ExpandedArticle instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('original_dimensions', instance.originalDimensions?.toJson());
+  writeNotNull('url', instance.url);
+  writeNotNull('ns', instance.ns);
+  writeNotNull('abstract', instance.abstract);
+  writeNotNull('thumbnail', instance.thumbnail);
+  writeNotNull('revision', instance.revision?.toJson());
+  writeNotNull('id', instance.id);
+  writeNotNull('title', instance.title);
+  writeNotNull('type', instance.type);
+  writeNotNull('comments', instance.comments);
+  return val;
+}

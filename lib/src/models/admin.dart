@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'admin.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class Admin {
   /// Admin name
   final String name;
@@ -24,13 +24,17 @@ class Admin {
   final String userPageUrl;
 
   /// An internal identification number for User
-  final int userId;
+  final String userId;
 
   /// Join date
-  final DateTime since;
+  final String since;
+
+  final String lastRevision;
 
   Admin(this.name, this.avatarUrl, this.edits, this.userContributionsUrl,
-      this.userPageUrl, this.userId, this.since);
+      this.userPageUrl, this.userId, this.since, this.lastRevision);
 
   factory Admin.fromJson(Map<String, dynamic> json) => _$AdminFromJson(json);
+
+  Map<String, dynamic> toJson() => _$AdminToJson(this);
 }

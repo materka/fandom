@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 147,
+      "name": "Wookieepedia",
+      "hub": "Entertainment",
+      "language": "en",
+      "topic": "Star Wars, ",
+      "domain": "starwars.fandom.com"
+    },
+    {
+      "id": 3035,
+      "name": "Fallout Wiki",
+      "hub": "Gaming",
+      "language": "en",
+      "topic": "Fallout, Fallout 2, Fallout 3, Fallout: New Vegas, Fallout Tactics, Brotherhood of Steel, Warfare, Fallout Trilogy",
+      "domain": "fallout.fandom.com"
+    }
+  ],
+  "next": 2,
+  "total": 247,
+  "batches": 124,
+  "currentBatch": 1
+}

@@ -9,11 +9,26 @@ import 'expanded_cross_wikia.dart';
 
 part 'expanded_cross_wikia_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ExpandedCrossWikiaResultSet extends ResultSet<ExpandedCrossWikia> {
-  ExpandedCrossWikiaResultSet(List<ExpandedCrossWikia> items)
+  /// Total number of batches
+  final int batches;
+
+  /// Total number of results
+  final int total;
+
+  /// Current batch number
+  final int currentBatch;
+
+  /// Number of elements in next batch
+  final int next;
+
+  ExpandedCrossWikiaResultSet(List<ExpandedCrossWikia> items, this.batches,
+      this.total, this.currentBatch, this.next)
       : super(items, null);
 
   factory ExpandedCrossWikiaResultSet.fromJson(Map<String, dynamic> json) =>
       _$ExpandedCrossWikiaResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ExpandedCrossWikiaResultSetToJson(this);
 }

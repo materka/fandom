@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": 2233,
+      "name": "Marvel Database",
+      "hub": "Movies",
+      "language": "en",
+      "topic": "Movies",
+      "domain": "marvel.fandom.com",
+      "wordmark": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/89/Wiki-wordmark.png/revision/latest?cb=20171211101516",
+      "title": "Marvel Database",
+      "url": "https://marvel.fandom.com",
+      "stats": {
+        "edits": 5629824,
+        "articles": 254899,
+        "pages": 1233169,
+        "users": 25798924,
+        "activeUsers": -1,
+        "images": 246686,
+        "videos": 1722,
+        "admins": 26,
+        "discussions": 52314
+      },
+      "topUsers": [
+        24800939,
+        25395047,
+        112155,
+        16461120,
+        764333,
+        4651179,
+        11220539,
+        39545992,
+        5315736
+      ],
+      "founding_user_id": "166",
+      "creation_date": "2006-11-20 00:00:00",
+      "headline": "Marvel Database Project",
+      "lang": "en",
+      "flags": [],
+      "desc": "With more than 250,000 articles, the Marvel Comics Database is the largest Marvel encyclopedia ever written, as well as being one of the five largest wiki on Fandom. The Database covers comics, characters, teams, games, television shows, movies, and more. Browse one of nearly 70,000 character pages, over 50,000 comics, or nearly 250,000 images in our galleries. There's something for every fan!",
+      "image": "https://images.wikia.nocookie.net/__cb20190102005710/marveldatabase/images/8/89/Wiki-wordmark.png",
+      "wam_score": "99.6857",
+      "original_dimensions": {
+        "width": 250,
+        "height": 65
+      }
+    },
+    {
+      "id": 2234,
+      "name": "Marvel Database",
+      "hub": "Comics",
+      "language": "nl",
+      "topic": "Movies",
+      "domain": "marvel.fandom.com",
+      "wordmark": "",
+      "title": "Marvel Database",
+      "url": "https://marvel.fandom.com/nl/",
+      "stats": {
+        "edits": 33452,
+        "articles": 6238,
+        "pages": 11291,
+        "users": 22670831,
+        "activeUsers": 1,
+        "images": 952,
+        "videos": 0,
+        "admins": 3
+      },
+      "topUsers": [
+        38568887
+      ],
+      "founding_user_id": "166",
+      "creation_date": "2006-11-20 00:00:00",
+      "lang": "nl",
+      "flags": [],
+      "desc": "",
+      "image": "",
+      "wam_score": 0
+    }
+  ],
+  "next": 2,
+  "total": 250,
+  "batches": 125,
+  "currentBatch": 1
+}

@@ -19,3 +19,22 @@ RelatedPage _$RelatedPageFromJson(Map<String, dynamic> json) {
     json['title'] as String,
   );
 }
+
+Map<String, dynamic> _$RelatedPageToJson(RelatedPage instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  writeNotNull('text', instance.text);
+  writeNotNull('imgUrl', instance.imgUrl);
+  writeNotNull(
+      'imgOriginalDimensions', instance.imgOriginalDimensions?.toJson());
+  writeNotNull('id', instance.id);
+  writeNotNull('title', instance.title);
+  return val;
+}

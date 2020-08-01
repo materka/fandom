@@ -9,7 +9,7 @@ import 'most_linked_expanded_article.dart';
 
 part 'most_linked_expanded_article_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class MostLinkedExpandedArticleResultSet
     extends ResultSet<MostLinkedExpandedArticle> {
   MostLinkedExpandedArticleResultSet(
@@ -19,4 +19,7 @@ class MostLinkedExpandedArticleResultSet
   factory MostLinkedExpandedArticleResultSet.fromJson(
           Map<String, dynamic> json) =>
       _$MostLinkedExpandedArticleResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() =>
+      _$MostLinkedExpandedArticleResultSetToJson(this);
 }

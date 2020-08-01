@@ -14,6 +14,19 @@ Navigation _$NavigationFromJson(Map<String, dynamic> json) {
   );
 }
 
+Map<String, dynamic> _$NavigationToJson(Navigation instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('navigation', instance.navigation?.toJson());
+  return val;
+}
+
 NavigationItem _$NavigationItemFromJson(Map<String, dynamic> json) {
   return NavigationItem(
     (json['wikia'] as List)
@@ -27,4 +40,18 @@ NavigationItem _$NavigationItemFromJson(Map<String, dynamic> json) {
             : NavigationLink.fromJson(e as Map<String, dynamic>))
         ?.toList(),
   );
+}
+
+Map<String, dynamic> _$NavigationItemToJson(NavigationItem instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('wikia', instance.wikia?.map((e) => e?.toJson())?.toList());
+  writeNotNull('wiki', instance.wiki?.map((e) => e?.toJson())?.toList());
+  return val;
 }

@@ -15,3 +15,18 @@ ListElement _$ListElementFromJson(Map<String, dynamic> json) {
         ?.toList(),
   );
 }
+
+Map<String, dynamic> _$ListElementToJson(ListElement instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull(
+      'elements', instance.elements?.map((e) => e?.toJson())?.toList());
+  return val;
+}

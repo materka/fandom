@@ -9,10 +9,15 @@ import 'user_query.dart';
 
 part 'user_query_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class UserQueryResultSet extends ResultSet<UserQuery> {
+  @JsonKey(name: 'users')
+  List<UserQuery> get items => super.items;
+
   UserQueryResultSet(List<UserQuery> items) : super(items, null);
 
   factory UserQueryResultSet.fromJson(Map<String, dynamic> json) =>
       _$UserQueryResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$UserQueryResultSetToJson(this);
 }

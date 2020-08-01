@@ -9,11 +9,13 @@ import 'new_article.dart';
 
 part 'new_article_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class NewArticleResultSet extends ResultSet<NewArticle> {
   NewArticleResultSet(List<NewArticle> items, String basePath)
       : super(items, basePath);
 
   factory NewArticleResultSet.fromJson(Map<String, dynamic> json) =>
       _$NewArticleResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NewArticleResultSetToJson(this);
 }

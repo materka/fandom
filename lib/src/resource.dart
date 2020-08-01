@@ -4,6 +4,8 @@
 
 import 'dart:math';
 
+import 'package:fandom/src/models/article_details_result_set.dart';
+
 import 'fandom.dart';
 import 'models/activity_response_result_set.dart';
 import 'models/article_result_set.dart';
@@ -61,7 +63,7 @@ class UserResource extends Resource<UserResource> {
   /// [ids] - Comma-separated list of user ids. Maximum size of id list is 100\
   /// [size] - The desired width (and height, because it is a square) for\
   /// the thumbnail, defaults to 100, 0 for no thumbnail
-  Future<UserResultSet> details({String ids = '', int size = 100}) async =>
+  Future<UserResultSet> details(String ids, {int size = 100}) async =>
       _get('Details', parameters: {'ids': ids, 'size': size})
           .then((json) => UserResultSet.fromJson(json));
 
@@ -113,6 +115,38 @@ class SearchResource extends Resource<SearchResource> {
             : null
       }).then((json) => CombinedSearchResultSet.fromJson(json));
 
+  /// Get results for cross-wiki search
+  ///
+  /// [query] - Search query\
+  /// [hub] - Comma-separated list of verticals (e.g. Gaming, Entertainment)\
+  /// [lang] - Comma separated language codes (e.g. en,de,fr)\
+  /// [rank] - The ranking to use in fetching the list of results, one of default, newest, oldest, recently-modified, stable, most-viewed, freshest, stalest\
+  /// [limit] - Limit the number of results\
+  /// [batch] - The batch (page) of results to fetch\
+  /// [height] - The desired height for the thumbnail\
+  /// [width] - The desired width for the thumbnail\
+  /// [snippet] - Maximum number of words returned in description
+  Future<ExpandedCrossWikiaResultSet> crossWiki(String query,
+          {String hub,
+          String lang,
+          String rank, // TODO: fix enum
+          int limit,
+          int batch,
+          int height,
+          int width,
+          int snippet}) async =>
+      _get('CrossWiki', parameters: {
+        'query': query,
+        'hub': hub,
+        'lang': lang,
+        'rank': rank,
+        'limit': limit,
+        'batch': batch,
+        'height': height,
+        'width': width,
+        'snippet': snippet
+      }).then((json) => ExpandedCrossWikiaResultSet.fromJson(json));
+
   /// Get results for cross-wiki search (extended response)
   ///
   /// [query] - Search query\
@@ -124,8 +158,7 @@ class SearchResource extends Resource<SearchResource> {
   /// [height] - The desired height for the thumbnail\
   /// [width] - The desired width for the thumbnail\
   /// [snippet] - Maximum number of words returned in description
-  @Deprecated('This endpoint seem to removed from the API')
-  Future<ExpandedCrossWikiaResultSet> crossWiki(String query,
+  Future<ExpandedCrossWikiaResultSet> crossWikiExpanded(String query,
           {String hub,
           String lang,
           String rank, // TODO: fix enum
@@ -136,6 +169,7 @@ class SearchResource extends Resource<SearchResource> {
           int snippet}) async =>
       _get('CrossWiki', parameters: {
         'expand': 1,
+        'query': query,
         'hub': hub,
         'lang': lang,
         'rank': rank,
@@ -201,7 +235,7 @@ class RelatedPagesResource extends Resource<RelatedPagesResource> {
   ///
   /// [ids] - Comma-separated list of article ids\
   /// [limit] - Limit the number of results
-  Future<RelatedPageResultSet> list({String ids, int limit}) async =>
+  Future<RelatedPageResultSet> list(String ids, {int limit}) async =>
       _get('List', parameters: {'ids': ids, 'limit': limit})
           .then((json) => RelatedPageResultSet.fromJson(json));
 }
@@ -250,9 +284,9 @@ class ArticlesResource extends Resource<ArticlesResource> {
   /// [abstract] - The desired length for the article's abstract\
   /// [width] - The desired width for the thumbnail\
   /// [height] - The desired height for the thumbnail
-  Future<ExpandedArticleResultSet> details(String ids,
+  Future<ArticleDetailsResultSet> details(String ids,
           {String titles, int abstract, int width, int height}) async =>
-      _get('Details').then((json) => ExpandedArticleResultSet.fromJson(json));
+      _get('Details').then((json) => ArticleDetailsResultSet.fromJson(json));
 
   /// Get articles in alphabetical order
   ///
@@ -309,7 +343,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
           {String namespaces, int limit, int minArticleQuality}) async =>
       _get('New', parameters: {
         'namespaces': namespaces,
-        'limit': max(limit, 100),
+        'limit': limit != null ? max(limit, 100) : null,
         'minArticleQuality': minArticleQuality != null
             ? min(99, max(0, minArticleQuality))
             : null
@@ -321,7 +355,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
   /// [baseArticleId] - Trending and popular related to article with given id
   Future<ArticleResultSet> popular({int limit, int baseArticleId}) async =>
       _get('Popular', parameters: {
-        'limit': max(limit, 10),
+        'limit': limit != null ? max(limit, 10) : null,
         'baseArticleId': baseArticleId
       }).then((json) => ArticleResultSet.fromJson(json));
 
@@ -333,7 +367,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
           {int limit, int baseArticleId}) async =>
       _get('Popular', parameters: {
         'expand': 1,
-        'limit': max(limit, 10),
+        'limit': limit != null ? max(limit, 10) : null,
         'baseArticleId': baseArticleId
       }).then((json) => ExpandedArticleResultSet.fromJson(json));
 
@@ -351,7 +385,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
       _get('Top', parameters: {
         'namepaces': namespaces,
         'category': category,
-        'limit': max(limit, 250),
+        'limit': limit != null ? max(limit, 250) : null,
         'baseArticleId': baseArticleId
       }).then((json) => ArticleResultSet.fromJson(json));
 
@@ -370,7 +404,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
         'expand': 1,
         'namepaces': namespaces,
         'category': category,
-        'limit': limit,
+        'limit': limit != null ? max(limit, 250) : null,
         'baseArticleId': baseArticleId
       }).then((json) => ExpandedArticleResultSet.fromJson(json));
 
@@ -533,7 +567,7 @@ class WikisResource extends Resource<WikisResource> {
   /// [limit] - The maximum number of results to fetch\
   /// [batch] - The batch/page index to retrieve\
   /// [includeDomain] - Whether to include wikis' domains as search targets or not
-  wikisByStringExpanded(String string,
+  Future<ExpandedWikiaResultSet> byStringExpanded(String string,
           {String hub,
           String lang,
           int limit,
@@ -547,7 +581,7 @@ class WikisResource extends Resource<WikisResource> {
         'limit': limit,
         'batch': batch,
         'includeDomain': includeDomain
-      }).then((json) => WikiaResultSet.fromJson(json));
+      }).then((json) => ExpandedWikiaResultSet.fromJson(json));
 
   /// Get information about wikis
   ///

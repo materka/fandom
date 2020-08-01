@@ -1,0 +1,985 @@
+{
+  "basepath": "https://marvel.fandom.com",
+  "items": [
+    {
+      "id": 95210,
+      "title": "Marvel Comics",
+      "ns": 0,
+      "url": "/wiki/Marvel_Comics",
+      "revision": {
+        "id": 5623313,
+        "user": "AnnabellRice",
+        "user_id": 16461120,
+        "timestamp": "1595572189"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Marvel Comics is a comic book publishing house known for creating notable super heroes such as..."
+    },
+    {
+      "id": 3490,
+      "title": "Gallery:Contents",
+      "ns": 0,
+      "url": "/wiki/Gallery:Contents",
+      "revision": {
+        "id": 4983493,
+        "user": "AnnabellRice",
+        "user_id": 16461120,
+        "timestamp": "1561627969"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Return to the Main Page"
+    },
+    {
+      "id": 8696,
+      "title": "Earth-616",
+      "ns": 0,
+      "url": "/wiki/Earth-616",
+      "revision": {
+        "id": 5565641,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1592307754"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The reality of Earth-616 has gone through eight different incarnations, all triggered by...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/e/e1/The_Marvel_Universe.png/revision/latest/window-crop/width/200/x-offset/257/y-offset/0/window-width/689/window-height/688?cb=20110513164401",
+      "original_dimensions": {
+        "width": 1200,
+        "height": 688
+      }
+    },
+    {
+      "id": 37679,
+      "title": "Homo sapiens",
+      "ns": 0,
+      "url": "/wiki/Homo_sapiens",
+      "revision": {
+        "id": 5620896,
+        "user": "HipperMario",
+        "user_id": 37854037,
+        "timestamp": "1595422274"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The entire branching off of the species Homo sapiens came with the arrival at Earth of the...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/7/7b/Homo_sapiens_from_Eternals_Vol_1_1_001.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/280/window-height/280?cb=20161020112940",
+      "original_dimensions": {
+        "width": 280,
+        "height": 579
+      }
+    },
+    {
+      "id": 3585,
+      "title": "New York City",
+      "ns": 0,
+      "url": "/wiki/New_York_City",
+      "revision": {
+        "id": 5623430,
+        "user": "MysteryScooby",
+        "user_id": 5504437,
+        "timestamp": "1595580802"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "New York City was the largest city and largest metropolitan area, by population, in the United...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/e/e1/New_York_City_from_Fear_Itself_Vol_1_1_002.jpg/revision/latest/window-crop/width/200/x-offset/353/y-offset/0/window-width/656/window-height/655?cb=20200321070656",
+      "original_dimensions": {
+        "width": 1358,
+        "height": 655
+      }
+    },
+    {
+      "id": 3586,
+      "title": "New York (State)",
+      "ns": 0,
+      "url": "/wiki/New_York_(State)",
+      "revision": {
+        "id": 5535043,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1591280668"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "New York is a state in the northeastern United States of America. New York was one of the..."
+    },
+    {
+      "id": 3632,
+      "title": "Earth",
+      "ns": 0,
+      "url": "/wiki/Earth",
+      "revision": {
+        "id": 5621361,
+        "user": "MysteryScooby",
+        "user_id": 5504437,
+        "timestamp": "1595457304"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Earth is a rocky planet orbiting the Sun, and the third planet in order from the star it orbits...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/6/65/Earth_from_Avengers_vs._X-Men_Infinite_Vol_1_6_001.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1044/window-height/1044?cb=20200321073740",
+      "original_dimensions": {
+        "width": 1044,
+        "height": 1166
+      }
+    },
+    {
+      "id": 3769,
+      "title": "United States of America",
+      "ns": 0,
+      "url": "/wiki/United_States_of_America",
+      "revision": {
+        "id": 5394469,
+        "user": "AnnabellRice",
+        "user_id": 16461120,
+        "timestamp": "1585685681"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "United States of America is a Constitutional Federal Republic in North America. The country is...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/e/e9/United_States_of_America_from_Marvel_Atlas_Vol_1_2_0001.jpg/revision/latest/window-crop/width/200/x-offset/233/y-offset/0/window-width/453/window-height/452?cb=20170104012050",
+      "original_dimensions": {
+        "width": 916,
+        "height": 452
+      }
+    },
+    {
+      "id": 8106,
+      "title": "Manhattan",
+      "ns": 0,
+      "url": "/wiki/Manhattan",
+      "revision": {
+        "id": 5617505,
+        "user": "MysteryScooby",
+        "user_id": 5504437,
+        "timestamp": "1595215267"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Manhattan is the heart of New York City. This is one of the world's leading financial, cultural...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/4/4e/Manhattan_from_Uncanny_Avengers_Vol_3_22_001.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1988/window-height/1988?cb=20170406232427",
+      "original_dimensions": {
+        "width": 1988,
+        "height": 3056
+      }
+    },
+    {
+      "id": 1678,
+      "title": "Peter Parker (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Peter_Parker_(Earth-616)",
+      "revision": {
+        "id": 5636608,
+        "user": "Jonmor93",
+        "user_id": 28397455,
+        "timestamp": "1596214079"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Peter Parker's history. For a complete history see Peter Parker's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/9/96/Friendly_Neighborhood_Spider-Man_Vol_2_8_Granov_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/640/window-height/640?cb=20190608001208",
+      "original_dimensions": {
+        "width": 640,
+        "height": 960
+      }
+    },
+    {
+      "id": 21472,
+      "title": "Homo superior",
+      "ns": 0,
+      "url": "/wiki/Homo_superior",
+      "revision": {
+        "id": 5520485,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1590703805"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Variable. Variable.",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/4/48/X-Men_Legacy_Vol_1_275_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/633/window-height/633?cb=20120710173830",
+      "original_dimensions": {
+        "width": 633,
+        "height": 950
+      }
+    },
+    {
+      "id": 20530,
+      "title": "Joe Quesada",
+      "ns": 0,
+      "url": "/wiki/Joe_Quesada",
+      "revision": {
+        "id": 5576708,
+        "user": "1137a",
+        "user_id": 39545992,
+        "timestamp": "1592949045"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Joe Quesada Our Reality (Earth-1218 ) Alternate Reality Versions · Movies · Television · Video Games",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/3/3f/Joe_Quesada_%28Earth-13122%29.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/271/window-height/271?cb=20131101235707",
+      "original_dimensions": {
+        "width": 271,
+        "height": 282
+      }
+    },
+    {
+      "id": 1292982,
+      "title": "Anthony Stark (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Anthony_Stark_(Earth-616)",
+      "revision": {
+        "id": 5638670,
+        "user": "Fronkadelic",
+        "user_id": 1349209,
+        "timestamp": "1596292291"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Tony Stark's history. For a complete history see Tony Stark's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/6/6b/Iron_Man_2020_Vol_2_5_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1988/window-height/1988?cb=20200731053606",
+      "original_dimensions": {
+        "width": 1988,
+        "height": 3056
+      }
+    },
+    {
+      "id": 7139,
+      "title": "Steven Rogers (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Steven_Rogers_(Earth-616)",
+      "revision": {
+        "id": 5638366,
+        "user": "Tarbo217",
+        "user_id": 32653650,
+        "timestamp": "1596273880"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Steve Rogers' history. For a complete history see Steve Rogers...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/b/b1/Captain_America_Vol_6_2_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/900/window-height/900?cb=20110719042719",
+      "original_dimensions": {
+        "width": 900,
+        "height": 1367
+      }
+    },
+    {
+      "id": 64786,
+      "title": "James Howlett (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/James_Howlett_(Earth-616)",
+      "revision": {
+        "id": 5631226,
+        "user": "Marvelous25",
+        "user_id": 39098941,
+        "timestamp": "1595935724"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Wolverine's history. For a complete history see Wolverine's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/1/16/James_Howlett_%28Earth-616%29_from_Wolverine_Vol_7_1_Silva_Variant_cover_001.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/781/window-height/781?cb=20191123041154",
+      "original_dimensions": {
+        "width": 781,
+        "height": 1186
+      }
+    },
+    {
+      "id": 388006,
+      "title": "Spider-Man's Suit",
+      "ns": 0,
+      "url": "/wiki/Spider-Man%27s_Suit",
+      "revision": {
+        "id": 5571423,
+        "user": "Renangalvim",
+        "user_id": 38215399,
+        "timestamp": "1592686524"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "These are the suits worn by the webslinging hero: Spider-Man. First appearance: Amazing Fantasy#15",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/f/f1/Amazing_Spider-Man_Vol_1_692_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/466/window-height/466?cb=20120507202132",
+      "original_dimensions": {
+        "width": 466,
+        "height": 715
+      }
+    },
+    {
+      "id": 3634,
+      "title": "Captain America's Shield",
+      "ns": 0,
+      "url": "/wiki/Captain_America%27s_Shield",
+      "revision": {
+        "id": 5634836,
+        "user": "Fronkadelic",
+        "user_id": 1349209,
+        "timestamp": "1596121350"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Captain America's shield is his primary weapon. The most well-known of his shields is a...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/80/Captain_America_Vol_4_5_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/598/window-height/598?cb=20151105011417",
+      "original_dimensions": {
+        "width": 598,
+        "height": 892
+      }
+    },
+    {
+      "id": 304002,
+      "title": "Stan Lee",
+      "ns": 0,
+      "url": "/wiki/Stan_Lee",
+      "revision": {
+        "id": 5636815,
+        "user": "MarvelBoy2002",
+        "user_id": 24949615,
+        "timestamp": "1596225856"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Stan Lee was an American comic book writer, editor, publisher, and producer and former primary...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/5/53/Stan_Lee.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/290/window-height/290?cb=20070328161012",
+      "original_dimensions": {
+        "width": 290,
+        "height": 352
+      }
+    },
+    {
+      "id": 1293103,
+      "title": "Avengers (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Avengers_(Earth-616)",
+      "revision": {
+        "id": 5635736,
+        "user": "HipperMario",
+        "user_id": 37854037,
+        "timestamp": "1596180296"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The Avengers were a team of extraordinary individuals with special abilities and the will to do...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/c/cb/Avengers_Vol_8_16_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/791/window-height/791?cb=20181218192518",
+      "original_dimensions": {
+        "width": 791,
+        "height": 1200
+      }
+    },
+    {
+      "id": 3550,
+      "title": "X-Men (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/X-Men_(Earth-616)",
+      "revision": {
+        "id": 5634203,
+        "user": "AnnabellRice",
+        "user_id": 16461120,
+        "timestamp": "1596090710"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The X-Men are a privately owned security force created to harbor peace between the emerging Homo...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/e/eb/House_of_X_Vol_1_3_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/791/window-height/791?cb=20190523185423",
+      "original_dimensions": {
+        "width": 791,
+        "height": 1200
+      }
+    },
+    {
+      "id": 26026,
+      "title": "Axel Alonso",
+      "ns": 0,
+      "url": "/wiki/Axel_Alonso",
+      "revision": {
+        "id": 5390650,
+        "user": "Copeinator123",
+        "user_id": 24800939,
+        "timestamp": "1585336650"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Axel Alonso Our Reality (Earth-1218 ) Video Games",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/3/3a/Axel_Alonso_%28Earth-1218%29_0001.jpg/revision/latest/window-crop/width/200/x-offset/39/y-offset/0/window-width/226/window-height/225?cb=20100209215851",
+      "original_dimensions": {
+        "width": 300,
+        "height": 225
+      }
+    },
+    {
+      "id": 1293027,
+      "title": "Thor Odinson (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Thor_Odinson_(Earth-616)",
+      "revision": {
+        "id": 5625138,
+        "user": "Excelsior23",
+        "user_id": 35524121,
+        "timestamp": "1595662301"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Thor Odinson's history. For a complete history see Thor Odinson's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/4/45/Thor_Odinson_%28Earth-616%29_from_Thor_Vol_6_1_002.png/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1019/window-height/1019?cb=20200101224528",
+      "original_dimensions": {
+        "width": 1019,
+        "height": 1304
+      }
+    },
+    {
+      "id": 21276,
+      "title": "Tom DeFalco",
+      "ns": 0,
+      "url": "/wiki/Tom_DeFalco",
+      "revision": {
+        "id": 5534479,
+        "user": "Machineman2005",
+        "user_id": 43771455,
+        "timestamp": "1591244313"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Tom DeFalco Our Reality (Earth-1218 ) Alternate Reality Versions",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/a/a6/Tom_DeFalco.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/300/window-height/300?cb=20090720133140",
+      "original_dimensions": {
+        "width": 300,
+        "height": 412
+      }
+    },
+    {
+      "id": 1833,
+      "title": "Bruce Banner (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Bruce_Banner_(Earth-616)",
+      "revision": {
+        "id": 5638486,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1596283373"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Bruce Banner's history. For a complete history see Bruce Banner's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/d/dc/Immortal_Hulk_20_Unknown_Comic_Books_Exclusive_Virgin_Variant.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/630/window-height/630?cb=20190830071143",
+      "original_dimensions": {
+        "width": 630,
+        "height": 960
+      }
+    },
+    {
+      "id": 882738,
+      "title": "Captain America's Uniform",
+      "ns": 0,
+      "url": "/wiki/Captain_America%27s_Uniform",
+      "revision": {
+        "id": 5467983,
+        "user": "MysteryScooby",
+        "user_id": 5504437,
+        "timestamp": "1588748622"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "To help him become a symbolic counterpart to the Red Skull, Steve Rogers was given the red...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/0/0d/Steven_Rogers_%28Earth-616%29_from_Official_Handbook_of_the_Marvel_Universe_Master_Edition_Vol_1_2_0001.jpg/revision/latest/window-crop/width/200/x-offset/314/y-offset/0/window-width/1001/window-height/1000?cb=20120726080350",
+      "original_dimensions": {
+        "width": 1625,
+        "height": 1000
+      }
+    },
+    {
+      "id": 6205,
+      "title": "Mjolnir",
+      "ns": 0,
+      "url": "/wiki/Mjolnir",
+      "revision": {
+        "id": 5632142,
+        "user": "Johnnybravo44",
+        "user_id": 1671874,
+        "timestamp": "1595966156"
+      },
+      "comments": 2,
+      "type": "article",
+      "abstract": "Mjolnir (literally, \"grinder\" as in \"grindstone\", cf.'meal' to \"Mjöl\") is the enchanted hammer...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/c/cd/Thor_Vikings_Vol_1_4_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/500/window-height/500?cb=20190712065442",
+      "original_dimensions": {
+        "width": 500,
+        "height": 733
+      }
+    },
+    {
+      "id": 306367,
+      "title": "Motion Picture Funnies Weekly Vol 1 1",
+      "ns": 0,
+      "url": "/wiki/Motion_Picture_Funnies_Weekly_Vol_1_1",
+      "revision": {
+        "id": 5413083,
+        "user": "Jasonmaia",
+        "user_id": 5315736,
+        "timestamp": "1586687798"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "A diver from the salvage ship S.S. Recovery is exploring a wreck to find a treasure when he...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/5/5e/Motion_Picture_Funnies_Weekly_Vol_1_1.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/572/window-height/572?cb=20100122182911",
+      "original_dimensions": {
+        "width": 572,
+        "height": 829
+      }
+    },
+    {
+      "id": 2458,
+      "title": "Benjamin Grimm (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Benjamin_Grimm_(Earth-616)",
+      "revision": {
+        "id": 5593510,
+        "user": "Ershelby",
+        "user_id": 25395047,
+        "timestamp": "1593882960"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Ben Grimm's history. For a complete history see Ben Grimm's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/a/a4/Fantastic_Four_Vol_6_1_The_Thing_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/922/window-height/922?cb=20180523101159",
+      "original_dimensions": {
+        "width": 922,
+        "height": 1400
+      }
+    },
+    {
+      "id": 2166,
+      "title": "Reed Richards (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Reed_Richards_(Earth-616)",
+      "revision": {
+        "id": 5612917,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1595020901"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Reed Richards' history. For a complete history see Reed Richards...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/1/17/Fantastic_Four_Vol_6_1_Mr._Fantastic_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/674/window-height/674?cb=20180627181804",
+      "original_dimensions": {
+        "width": 674,
+        "height": 1024
+      }
+    },
+    {
+      "id": 29481,
+      "title": "Scott Summers (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Scott_Summers_(Earth-616)",
+      "revision": {
+        "id": 5634450,
+        "user": "Marvelous25",
+        "user_id": 39098941,
+        "timestamp": "1596102495"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Scott Summers' history. For a complete history see Scott Summers...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/3/36/House_of_X_Vol_1_1_Character_Decades_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1154/window-height/1154?cb=20190811005008",
+      "original_dimensions": {
+        "width": 1154,
+        "height": 1774
+      }
+    },
+    {
+      "id": 2941,
+      "title": "Fantastic Four (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Fantastic_Four_(Earth-616)",
+      "revision": {
+        "id": 5608865,
+        "user": "HipperMario",
+        "user_id": 37854037,
+        "timestamp": "1594886219"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The Fantastic Four are a group of scientific explorers lead by Dr. Reed Richards. After the team...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/9/95/Fantastic_Four_Vol_6_11_Larraz_Virgin_Variant.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/922/window-height/922?cb=20181218221015",
+      "original_dimensions": {
+        "width": 922,
+        "height": 1400
+      }
+    },
+    {
+      "id": 5991,
+      "title": "Contents",
+      "ns": 0,
+      "url": "/wiki/Contents",
+      "revision": {
+        "id": 5585978,
+        "user": "Copeinator123",
+        "user_id": 24800939,
+        "timestamp": "1593371729"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Return to the Main Page",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/3/35/Amazing_Spider-Man_Vol_5_37.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1280/window-height/1280?cb=20191217171658",
+      "original_dimensions": {
+        "width": 1280,
+        "height": 1968
+      }
+    },
+    {
+      "id": 1837,
+      "title": "Jonathan Storm (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Jonathan_Storm_(Earth-616)",
+      "revision": {
+        "id": 5627433,
+        "user": "Fronkadelic",
+        "user_id": 1349209,
+        "timestamp": "1595776886"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Johnny Storm's history. For a complete history see Johnny Storm's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/88/Fantastic_Four_Vol_6_1_Human_Torch_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/922/window-height/922?cb=20180523100956",
+      "original_dimensions": {
+        "width": 922,
+        "height": 1400
+      }
+    },
+    {
+      "id": 8761,
+      "title": "Web-Shooters",
+      "ns": 0,
+      "url": "/wiki/Web-Shooters",
+      "revision": {
+        "id": 5587612,
+        "user": "HBK123",
+        "user_id": 764333,
+        "timestamp": "1593451767"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "After having a radioactive spider bite him, inject its irradiated venom into his bloodstream...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/0/08/Web-Shooters_from_Amazing_Spider-Man_Vol_1_259_001.PNG/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/297/window-height/297?cb=20151210054448",
+      "original_dimensions": {
+        "width": 297,
+        "height": 446
+      }
+    },
+    {
+      "id": 129078,
+      "title": "Gallery:Location Gallery",
+      "ns": 0,
+      "url": "/wiki/Gallery:Location_Gallery",
+      "revision": {
+        "id": 3515607,
+        "user": "Artful Dodger",
+        "user_id": 100066,
+        "timestamp": "1464122478"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Choose a letter: 0-9 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+    },
+    {
+      "id": 6204,
+      "title": "California (State)",
+      "ns": 0,
+      "url": "/wiki/California_(State)",
+      "revision": {
+        "id": 5616117,
+        "user": "Jasonmaia",
+        "user_id": 5315736,
+        "timestamp": "1595155618"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The state of California has been visited by many super-powered and costumed beings during its...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/c/c9/California.gif/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/250/window-height/250?cb=20060909001856",
+      "original_dimensions": {
+        "width": 250,
+        "height": 274
+      }
+    },
+    {
+      "id": 15725,
+      "title": "Henry McCoy (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Henry_McCoy_(Earth-616)",
+      "revision": {
+        "id": 5622210,
+        "user": "Marvelous25",
+        "user_id": 39098941,
+        "timestamp": "1595514283"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Henry McCoy's history. For a complete history see Henry McCoy's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/2/2f/X-Force_Vol_6_6_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1051/window-height/1051?cb=20191105195001",
+      "original_dimensions": {
+        "width": 1051,
+        "height": 1600
+      }
+    },
+    {
+      "id": 7823,
+      "title": "Namor McKenzie (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Namor_McKenzie_(Earth-616)",
+      "revision": {
+        "id": 5612906,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1595020800"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Namor McKenzie's history. For a complete history see Namor...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/85/Avengers_Vol_8_9_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/918/window-height/918?cb=20180724230616",
+      "original_dimensions": {
+        "width": 918,
+        "height": 1400
+      }
+    },
+    {
+      "id": 2614,
+      "title": "Ororo Munroe (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Ororo_Munroe_(Earth-616)",
+      "revision": {
+        "id": 5625701,
+        "user": "ADour",
+        "user_id": 4651179,
+        "timestamp": "1595709707"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Ororo Munroe, also known as Storm, is the descendant of an ancient line of African priestesses...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/5/58/Giant-Size_X-Men_Storm_Vol_1_1_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/759/window-height/759?cb=20200321192044",
+      "original_dimensions": {
+        "width": 759,
+        "height": 1152
+      }
+    },
+    {
+      "id": 25798,
+      "title": "Roy Thomas",
+      "ns": 0,
+      "url": "/wiki/Roy_Thomas",
+      "revision": {
+        "id": 5390623,
+        "user": "Copeinator123",
+        "user_id": 24800939,
+        "timestamp": "1585334626"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Roy Thomas Our Reality (Earth-1218 ) Alternate Reality Versions",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/6/6f/Roy_Thomas_%28Earth-616%29_from_Nova_Vol_1_5_0001.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/256/window-height/256?cb=20200109023517",
+      "original_dimensions": {
+        "width": 256,
+        "height": 346
+      }
+    },
+    {
+      "id": 1396,
+      "title": "Matthew Murdock (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Matthew_Murdock_(Earth-616)",
+      "revision": {
+        "id": 5620926,
+        "user": "Ckelly95",
+        "user_id": 44087708,
+        "timestamp": "1595426526"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Matthew Murdock's history. For a complete history see Matthew...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/a/aa/Daredevil_Vol_6_21_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1031/window-height/1031?cb=20200221001243",
+      "original_dimensions": {
+        "width": 1031,
+        "height": 1566
+      }
+    },
+    {
+      "id": 20496,
+      "title": "Jim Shooter",
+      "ns": 0,
+      "url": "/wiki/Jim_Shooter",
+      "revision": {
+        "id": 5171987,
+        "user": "Copeinator123",
+        "user_id": 24800939,
+        "timestamp": "1573611447"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "James Shooter Our Reality (Earth-1218 ) Alternate Reality Versions",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/1/16/JimShooter11.15.08ByLuigiNovi1.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/1216/window-height/1216?cb=20090719222449",
+      "original_dimensions": {
+        "width": 1216,
+        "height": 1842
+      }
+    },
+    {
+      "id": 55534,
+      "title": "Stephen Strange (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Stephen_Strange_(Earth-616)",
+      "revision": {
+        "id": 5636779,
+        "user": "NEOIVAN9",
+        "user_id": 39759479,
+        "timestamp": "1596221314"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Stephen Strange's history. For a complete history see Stephen...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/3/35/Doctor_Strange_Annual_Vol_3_1_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/849/window-height/849?cb=20191004204455",
+      "original_dimensions": {
+        "width": 849,
+        "height": 1294
+      }
+    },
+    {
+      "id": 1409,
+      "title": "Wade Wilson (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Wade_Wilson_(Earth-616)",
+      "revision": {
+        "id": 5625779,
+        "user": "Johnnybravo44",
+        "user_id": 1671874,
+        "timestamp": "1595711426"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Wade had conflicting memories of his childhood. He once recalled that his father abandoned his...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/c/c4/Deadpool_Vol_7_1_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/922/window-height/922?cb=20180601075902",
+      "original_dimensions": {
+        "width": 922,
+        "height": 1400
+      }
+    },
+    {
+      "id": 18053,
+      "title": "Strategic Homeland Intervention, Enforcement and Logistics Division (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Strategic_Homeland_Intervention,_Enforcement_and_Logistics_Division_(Earth-616)",
+      "revision": {
+        "id": 5635208,
+        "user": "Astralproxy",
+        "user_id": 25395735,
+        "timestamp": "1596150687"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "S.H.I.E.L.D. (Strategic Homeland Intervention, Enforcement and Logistics Division) was an...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/d/d5/Strategic_Homeland_Intervention%2C_Enforcement_and_Logistics_Division_%28Earth-616%29_from_Secret_War_From_the_Files_of_Nick_Fury_Vol_1_1_Back_Cover_001.png/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/2001/window-height/2000?cb=20200603023343",
+      "original_dimensions": {
+        "width": 2000,
+        "height": 2000
+      }
+    },
+    {
+      "id": 1448,
+      "title": "Victor von Doom (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Victor_von_Doom_(Earth-616)",
+      "revision": {
+        "id": 5628289,
+        "user": "ADour",
+        "user_id": 4651179,
+        "timestamp": "1595811822"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Victor von Doom's history. For a complete history see Victor von...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/f/f9/Victor_von_Doom_%28Earth-616%29_from_Thor_Vol_1_600.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/986/window-height/986?cb=20130528050125",
+      "original_dimensions": {
+        "width": 986,
+        "height": 1410
+      }
+    },
+    {
+      "id": 65219,
+      "title": "Jean Grey (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Jean_Grey_(Earth-616)",
+      "revision": {
+        "id": 5621455,
+        "user": "Ershelby",
+        "user_id": 25395047,
+        "timestamp": "1595463490"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Jean Grey's history. For a complete history see Jean Grey's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/b/bd/X-Men_Vol_5_1_Artgerm_Virgin_Variant.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/842/window-height/842?cb=20190904135528",
+      "original_dimensions": {
+        "width": 842,
+        "height": 1280
+      }
+    },
+    {
+      "id": 1863,
+      "title": "Susan Storm (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Susan_Storm_(Earth-616)",
+      "revision": {
+        "id": 5627402,
+        "user": "EddieHyde",
+        "user_id": 40117808,
+        "timestamp": "1595775562"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Susan Storm's history. For a complete history see Susan Storm's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/3/39/Fantastic_Four_Vol_6_1_Invisible_Woman_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/674/window-height/674?cb=20180627181622",
+      "original_dimensions": {
+        "width": 674,
+        "height": 1024
+      }
+    },
+    {
+      "id": 8749,
+      "title": "Xavier's School for Gifted Youngsters",
+      "ns": 0,
+      "url": "/wiki/Xavier%27s_School_for_Gifted_Youngsters",
+      "revision": {
+        "id": 5609639,
+        "user": "Artful Bot",
+        "user_id": 824967,
+        "timestamp": "1594931599"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "The Xavier's School for Gifted Youngsters is a special institute founded and led by Professor...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/5/52/Xavier%27s_School_for_Gifted_Youngsters_from_House_of_X_Vol_1_1_001.jpg/revision/latest/window-crop/width/200/x-offset/151/y-offset/0/window-width/301/window-height/300?cb=20190730101243",
+      "original_dimensions": {
+        "width": 600,
+        "height": 300
+      }
+    },
+    {
+      "id": 1293080,
+      "title": "Clinton Barton (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Clinton_Barton_(Earth-616)",
+      "revision": {
+        "id": 5628967,
+        "user": "Derpdonkey",
+        "user_id": 35408124,
+        "timestamp": "1595863275"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "Clinton \"Clint\" Barton was the son of Harold Barton and Edith Barton. He grew up working in his...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/7/7e/Civil_War_II_Vol_1_3_Hawkeye_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/475/window-height/475?cb=20160312004004",
+      "original_dimensions": {
+        "width": 475,
+        "height": 720
+      }
+    }
+  ]
+}

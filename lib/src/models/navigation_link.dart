@@ -4,11 +4,9 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
-import 'navigation_children.dart';
-
 part 'navigation_link.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class NavigationLink {
   /// On wiki navigation bar text
   final String text;
@@ -19,10 +17,12 @@ class NavigationLink {
   final String href;
 
   /// Children collection containing article or special pages data
-  final List<NavigationChildren> children;
+  final List<NavigationLink> children;
 
   NavigationLink(this.text, this.href, this.children);
 
   factory NavigationLink.fromJson(Map<String, dynamic> json) =>
       _$NavigationLinkFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NavigationLinkToJson(this);
 }

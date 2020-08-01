@@ -14,3 +14,19 @@ ActivityResponse _$ActivityResponseFromJson(Map<String, dynamic> json) {
     json['timestamp'] as int,
   );
 }
+
+Map<String, dynamic> _$ActivityResponseToJson(ActivityResponse instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('article', instance.article);
+  writeNotNull('user', instance.user);
+  writeNotNull('revisionId', instance.revisionId);
+  writeNotNull('timestamp', instance.timestamp);
+  return val;
+}

@@ -4,22 +4,31 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
-import 'result_set.dart';
 import 'wam.dart';
 
 part 'wam_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
-class WamResultSet extends ResultSet<Wam> {
+@JsonSerializable(explicitToJson: true)
+class WamResultSet {
+  @JsonKey(name: 'wam_index')
+  final Map<String, Wam> items;
+
   /// The total count of wikis available for provided params,
-  final int totalResults;
+  @JsonKey(name: 'wam_results_total')
+  final String totalResults;
 
-  /// Date of received list
-  final indexDate;
+  /// Date of received list (Unix timestamp)
+  @JsonKey(name: 'wam_index_date')
+  final int indexDate;
 
-  WamResultSet(List<Wam> items, this.totalResults, this.indexDate)
-      : super(items, null);
+  /// ? (Unix timestamp)
+  @JsonKey(name: 'wam_actual_date')
+  final int actualDate;
+
+  WamResultSet(this.items, this.totalResults, this.indexDate, this.actualDate);
 
   factory WamResultSet.fromJson(Map<String, dynamic> json) =>
       _$WamResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WamResultSetToJson(this);
 }

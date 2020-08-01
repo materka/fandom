@@ -9,7 +9,7 @@ import 'wikia_stats.dart';
 
 part 'expanded_wikia.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ExpandedWikia {
   /// Wikia headline
   final String headline;
@@ -40,13 +40,19 @@ class ExpandedWikia {
   final String domain;
 
   /// Wiki WAM score
-  final double wam_score;
+  @JsonKey(name: 'wam_score')
+  final dynamic wamScore;
 
   /// An internal identification number for Wikia
   final int id;
 
   /// Wikia language
+  final String language;
+
+  /// Wikia language
   final String lang;
+
+  final String hub;
 
   /// Array with ten top contributors
   final List<int> topUsers;
@@ -62,7 +68,7 @@ class ExpandedWikia {
 
   /// An internal identification number for Wikia founder,
   @JsonKey(name: 'founding_user_id')
-  final int foundingUserId;
+  final String foundingUserId;
 
   /// Date and time of the creation of Wikia
   @JsonKey(name: 'creation_date')
@@ -78,16 +84,20 @@ class ExpandedWikia {
       this.image,
       this.flags,
       this.domain,
-      this.wam_score,
+      this.wamScore,
       this.id,
-      this.lang,
+      this.language,
       this.topUsers,
       this.wordmark,
       this.topic,
       this.title,
       this.foundingUserId,
-      this.creationDate);
+      this.creationDate,
+      this.lang,
+      this.hub);
 
   factory ExpandedWikia.fromJson(Map<String, dynamic> json) =>
       _$ExpandedWikiaFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ExpandedWikiaToJson(this);
 }

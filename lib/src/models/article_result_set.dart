@@ -9,7 +9,7 @@ import 'article.dart';
 
 part 'article_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class ArticleResultSet extends ResultSet<Article> {
   /// Offset to start next batch of data
   final String offset;
@@ -19,4 +19,6 @@ class ArticleResultSet extends ResultSet<Article> {
 
   factory ArticleResultSet.fromJson(Map<String, dynamic> json) =>
       _$ArticleResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ArticleResultSetToJson(this);
 }

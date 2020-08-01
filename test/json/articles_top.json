@@ -1,0 +1,17 @@
+{
+  "basepath": "https://marvel.fandom.com",
+  "items": [
+    {
+      "id": 302773,
+      "title": "Power Grid",
+      "url": "/wiki/Power_Grid",
+      "ns": 0
+    },
+    {
+      "id": 1678,
+      "title": "Peter Parker (Earth-616)",
+      "url": "/wiki/Peter_Parker_(Earth-616)",
+      "ns": 0
+    }
+  ]
+}

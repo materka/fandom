@@ -8,7 +8,7 @@ import 'navigation_link.dart';
 
 part 'navigation.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class Navigation {
   /// Wrapper for navigation objects
   final NavigationItem navigation;
@@ -17,9 +17,11 @@ class Navigation {
 
   factory Navigation.fromJson(Map<String, dynamic> json) =>
       _$NavigationFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NavigationToJson(this);
 }
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class NavigationItem {
   /// On the wiki navigation bar data
   final List<NavigationLink> wikia;
@@ -31,4 +33,6 @@ class NavigationItem {
 
   factory NavigationItem.fromJson(Map<String, dynamic> json) =>
       _$NavigationItemFromJson(json);
+
+  Map<String, dynamic> toJson() => _$NavigationItemToJson(this);
 }

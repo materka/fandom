@@ -15,9 +15,18 @@ WikiaInfo _$WikiaInfoFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$WikiaInfoToJson(WikiaInfo instance) => <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'language': instance.language,
-      'domain': instance.domain,
-    };
+Map<String, dynamic> _$WikiaInfoToJson(WikiaInfo instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('name', instance.name);
+  writeNotNull('language', instance.language);
+  writeNotNull('domain', instance.domain);
+  return val;
+}

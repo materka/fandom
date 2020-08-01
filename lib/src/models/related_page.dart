@@ -8,7 +8,7 @@ import 'image_size.dart';
 
 part 'related_page.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class RelatedPage {
   /// The relative URL of the Article.
   /// Absolute URL: obtained from combining [url] with
@@ -35,4 +35,6 @@ class RelatedPage {
 
   factory RelatedPage.fromJson(Map<String, dynamic> json) =>
       _$RelatedPageFromJson(json);
+
+  Map<String, dynamic> toJson() => _$RelatedPageToJson(this);
 }

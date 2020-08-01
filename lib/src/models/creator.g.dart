@@ -13,7 +13,16 @@ Creator _$CreatorFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$CreatorToJson(Creator instance) => <String, dynamic>{
-      'avatar': instance.avatar,
-      'name': instance.name,
-    };
+Map<String, dynamic> _$CreatorToJson(Creator instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('avatar', instance.avatar);
+  writeNotNull('name', instance.name);
+  return val;
+}

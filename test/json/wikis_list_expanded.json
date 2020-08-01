@@ -1,0 +1,96 @@
+{
+  "items": [
+    {
+      "id": 147,
+      "name": "Wookieepedia",
+      "hub": "Movies",
+      "language": "en",
+      "topic": "Movies",
+      "domain": "starwars.fandom.com",
+      "wordmark": "https://img3.wikia.nocookie.net/__cb20150101013332/starwars/images/8/89/Wiki-wordmark.png",
+      "title": "Wookieepedia",
+      "url": "https://starwars.fandom.com",
+      "stats": {
+        "edits": 9283962,
+        "articles": 158885,
+        "pages": 521774,
+        "users": 25807829,
+        "activeUsers": 787,
+        "images": 97547,
+        "videos": 10,
+        "admins": 14,
+        "discussions": 51734
+      },
+      "topUsers": [
+        27768064,
+        3522837,
+        33097835,
+        30275524,
+        37646385,
+        116899,
+        33703582
+      ],
+      "founding_user_id": "2041",
+      "creation_date": "2004-11-11 23:33:14",
+      "headline": "Wookieepedia, the Star Wars Wiki",
+      "lang": "en",
+      "flags": [],
+      "desc": "Wookieepedia is an online encyclopedia that contains detailed information about the Star Wars movies and the spin-offs from those, including books and video games. ",
+      "image": "https://images.wikia.nocookie.net/__cb20061211053311/starwars/images/8/84/PediaBIG.png",
+      "wam_score": "99.8062",
+      "original_dimensions": {
+        "width": 1042,
+        "height": 1042
+      }
+    },
+    {
+      "id": 3035,
+      "name": "Fallout Wiki",
+      "hub": "Games",
+      "language": "en",
+      "topic": "Gaming",
+      "domain": "fallout.fandom.com",
+      "wordmark": "https://vignette.wikia.nocookie.net/fallout/images/8/89/Wiki-wordmark.png/revision/latest?cb=20190907192151",
+      "title": "Fallout Wiki",
+      "url": "https://fallout.fandom.com",
+      "stats": {
+        "edits": 3280753,
+        "articles": 36048,
+        "pages": 531730,
+        "users": 25807829,
+        "activeUsers": 260,
+        "images": 71624,
+        "videos": 1113,
+        "admins": 23,
+        "discussions": 110695
+      },
+      "topUsers": [
+        3183960,
+        39887256,
+        27887941,
+        7194,
+        34927390,
+        3016642,
+        37676305,
+        25306221,
+        39271704
+      ],
+      "founding_user_id": "0",
+      "creation_date": "2005-02-07 06:40:52",
+      "headline": "Nukapedia - The Fallout Wiki",
+      "lang": "en",
+      "flags": [],
+      "desc": "Created and maintained by the Fallout community, Nukapedia: The Fallout Wiki aims to create the best resource for the Fallout series of games, including, but not limited to: Fallout, Fallout 2, Fallout 3, Fallout: New Vegas, Fallout 4, Fallout 76, Fallout: Tactics, Fallout: Brotherhood of Steel and Van Buren.",
+      "image": "https://images.wikia.nocookie.net/__cb20170307014046/fallout/images/c/c1/Fallout_launch.jpg",
+      "wam_score": "99.5208",
+      "original_dimensions": {
+        "width": 1751,
+        "height": 1337
+      }
+    }
+  ],
+  "next": 2,
+  "total": 247,
+  "batches": 124,
+  "currentBatch": 1
+}

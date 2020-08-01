@@ -1,0 +1,22 @@
+{
+  "batches": 500,
+  "currentBatch": 1,
+  "next": 3,
+  "total": 220052,
+  "items": [
+    {
+      "id": 68964,
+      "title": "Captain",
+      "snippet": "Many characters in the Marvel Universe use code-names starting by the title <span class=\"searchmatch\">Captain</span>, Cap'n or Cap. To be noted that it correspond also to a military, police and navy titles, who aren't",
+      "url": "https://marvel.fandom.com/wiki/Captain",
+      "ns": 0
+    },
+    {
+      "id": 3777,
+      "title": "Captain America",
+      "snippet": "of World War II, <span class=\"searchmatch\">Captain</span> America and Bucky were both presumed dead in an explosion. Decades later, <span class=\"searchmatch\">Captain</span> America was found trapped in ice and revived in the modern world. <span class=\"searchmatch\">Captain</span> America would then later",
+      "url": "https://marvel.fandom.com/wiki/Captain_America",
+      "ns": 0
+    }
+  ]
+}

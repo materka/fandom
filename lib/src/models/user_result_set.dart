@@ -9,10 +9,12 @@ import 'user.dart';
 
 part 'user_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class UserResultSet extends ResultSet<User> {
   UserResultSet(List<User> items, String basePath) : super(items, basePath);
 
   factory UserResultSet.fromJson(Map<String, dynamic> json) =>
       _$UserResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$UserResultSetToJson(this);
 }

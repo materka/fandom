@@ -16,8 +16,15 @@ HubArticleResultSet _$HubArticleResultSetFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$HubArticleResultSetToJson(
-        HubArticleResultSet instance) =>
-    <String, dynamic>{
-      'items': instance.items,
-    };
+Map<String, dynamic> _$HubArticleResultSetToJson(HubArticleResultSet instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('items', instance.items?.map((e) => e?.toJson())?.toList());
+  return val;
+}

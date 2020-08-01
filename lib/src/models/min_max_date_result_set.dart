@@ -5,14 +5,19 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import 'min_max_date.dart';
-import 'result_set.dart';
 
 part 'min_max_date_result_set.g.dart';
 
-@JsonSerializable(createToJson: false)
-class MinMaxDateResultSet extends ResultSet<MinMaxDate> {
-  MinMaxDateResultSet(List<MinMaxDate> items) : super(items, null);
+@JsonSerializable(explicitToJson: true)
+// TODO: Name change...this is just a container for minMaxDate
+class MinMaxDateResultSet {
+  @JsonKey(name: 'min_max_dates')
+  final MinMaxDate minMaxDate;
+
+  MinMaxDateResultSet(this.minMaxDate);
 
   factory MinMaxDateResultSet.fromJson(Map<String, dynamic> json) =>
       _$MinMaxDateResultSetFromJson(json);
+
+  Map<String, dynamic> toJson() => _$MinMaxDateResultSetToJson(this);
 }

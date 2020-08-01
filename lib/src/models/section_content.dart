@@ -8,7 +8,7 @@ import 'list_element.dart';
 
 part 'section_content.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class SectionContent {
   /// Content element type, can be paragraph or list
   final String type;
@@ -23,4 +23,5 @@ class SectionContent {
 
   factory SectionContent.fromJson(Map<String, dynamic> json) =>
       _$SectionContentFromJson(json);
+  Map<String, dynamic> toJson() => _$SectionContentToJson(this);
 }

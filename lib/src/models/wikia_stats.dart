@@ -6,7 +6,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'wikia_stats.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable()
 class WikiaStats {
   /// Number of total users on Wikia
   final int users;
@@ -32,9 +32,14 @@ class WikiaStats {
   /// Number of total images on Wikia
   final int images;
 
+  /// Number of total discussions on Wikia
+  final int discussions;
+
   WikiaStats(this.users, this.articles, this.pages, this.admins,
-      this.activeUsers, this.edits, this.videos, this.images);
+      this.activeUsers, this.edits, this.videos, this.images, this.discussions);
 
   factory WikiaStats.fromJson(Map<String, dynamic> json) =>
       _$WikiaStatsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$WikiaStatsToJson(this);
 }

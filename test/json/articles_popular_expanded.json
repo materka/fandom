@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": 1678,
+      "title": "Peter Parker (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/Peter_Parker_(Earth-616)",
+      "revision": {
+        "id": 5636608,
+        "user": "Jonmor93",
+        "user_id": 28397455,
+        "timestamp": "1596214079"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Peter Parker's history. For a complete history see Peter Parker's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/9/96/Friendly_Neighborhood_Spider-Man_Vol_2_8_Granov_Variant_Textless.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/640/window-height/640?cb=20190608001208",
+      "original_dimensions": {
+        "width": 640,
+        "height": 960
+      }
+    },
+    {
+      "id": 64786,
+      "title": "James Howlett (Earth-616)",
+      "ns": 0,
+      "url": "/wiki/James_Howlett_(Earth-616)",
+      "revision": {
+        "id": 5631226,
+        "user": "Marvelous25",
+        "user_id": 39098941,
+        "timestamp": "1595935724"
+      },
+      "comments": 0,
+      "type": "article",
+      "abstract": "This is an abridged version of Wolverine's history. For a complete history see Wolverine's...",
+      "thumbnail": "https://vignette.wikia.nocookie.net/marveldatabase/images/1/16/James_Howlett_%28Earth-616%29_from_Wolverine_Vol_7_1_Silva_Variant_cover_001.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/781/window-height/781?cb=20191123041154",
+      "original_dimensions": {
+        "width": 781,
+        "height": 1186
+      }
+    }
+  ],
+  "basepath": "https://marvel.fandom.com"
+}

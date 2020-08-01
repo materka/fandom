@@ -18,8 +18,17 @@ HubArticleResult _$HubArticleResultFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$HubArticleResultToJson(HubArticleResult instance) =>
-    <String, dynamic>{
-      'wikia': instance.wikia,
-      'articles': instance.articles,
-    };
+Map<String, dynamic> _$HubArticleResultToJson(HubArticleResult instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('wikia', instance.wikia?.toJson());
+  writeNotNull(
+      'articles', instance.articles?.map((e) => e?.toJson())?.toList());
+  return val;
+}

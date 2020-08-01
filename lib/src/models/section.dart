@@ -9,7 +9,7 @@ import 'section_image.dart';
 
 part 'section.g.dart';
 
-@JsonSerializable(createToJson: false)
+@JsonSerializable(explicitToJson: true)
 class Section {
   /// Article section title
   final String title;
@@ -27,4 +27,5 @@ class Section {
 
   factory Section.fromJson(Map<String, dynamic> json) =>
       _$SectionFromJson(json);
+  Map<String, dynamic> toJson() => _$SectionToJson(this);
 }
