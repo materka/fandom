@@ -22,7 +22,7 @@ Future<void> main() async {
 ```
 
 Using Dio library:
-```
+```dart
 import 'package:dio/dio.dart';
 import 'package:fandom/src/fandom.dart';
 
