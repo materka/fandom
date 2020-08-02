@@ -58,12 +58,10 @@ class WikiData {
       this.localNav,
       this.vertical,
       this.basePath,
-      this.isGASpecialWiki,
       this.articlePath,
       this.facebookAppId,
       this.appleTouchIcon,
       this.favicon,
-      this.isClosed,
       this.scriptPath,
       this.surrogateKey,
       this.image,
@@ -73,7 +71,9 @@ class WikiData {
       this.recommendedVideoPlaylist,
       this.qualarooUrl,
       this.cdnRootUrl,
-      this.contentNamespaces);
+      this.contentNamespaces,
+      {this.isGASpecialWiki,
+      this.isClosed});
 
   factory WikiData.fromJson(Map<String, dynamic> json) =>
       _$WikiDataFromJson(json);

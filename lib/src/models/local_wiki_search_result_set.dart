@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
-import 'package:fandom/src/models/result_set.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import 'local_wiki_search.dart';
+import 'result_set.dart';
 
 part 'local_wiki_search_result_set.g.dart';
 

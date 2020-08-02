@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
-import 'package:fandom/src/models/image_size.dart';
 import 'package:json_annotation/json_annotation.dart';
 
+import 'image_size.dart';
 import 'revision.dart';
 
 part 'expanded_article.g.dart';

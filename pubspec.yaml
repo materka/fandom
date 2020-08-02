@@ -1,6 +1,6 @@
 name: fandom
 description: A library for Fandom APIv1 interaction, which makes it easy to access data from specified fandom URL
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/materka/fandom
 
 environment:

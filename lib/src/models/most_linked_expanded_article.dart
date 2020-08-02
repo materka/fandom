@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
-import 'package:fandom/src/models/expanded_article.dart';
 import 'package:json_annotation/json_annotation.dart';
 
+import 'expanded_article.dart';
 import 'image_size.dart';
 import 'revision.dart';
 
@@ -34,5 +34,6 @@ class MostLinkedExpandedArticle extends ExpandedArticle {
   factory MostLinkedExpandedArticle.fromJson(Map<String, dynamic> json) =>
       _$MostLinkedExpandedArticleFromJson(json);
 
+  @override
   Map<String, dynamic> toJson() => _$MostLinkedExpandedArticleToJson(this);
 }

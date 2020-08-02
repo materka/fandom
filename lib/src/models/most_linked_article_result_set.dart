@@ -2,9 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be found
 // in the LICENSE file.
 
-import 'package:fandom/src/models/most_linked_article.dart';
-import 'package:fandom/src/models/result_set.dart';
 import 'package:json_annotation/json_annotation.dart';
+
+import 'most_linked_article.dart';
+import 'result_set.dart';
 
 part 'most_linked_article_result_set.g.dart';
 

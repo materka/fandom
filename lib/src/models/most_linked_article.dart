@@ -21,5 +21,6 @@ class MostLinkedArticle extends Article {
   factory MostLinkedArticle.fromJson(Map<String, dynamic> json) =>
       _$MostLinkedArticleFromJson(json);
 
+  @override
   Map<String, dynamic> toJson() => _$MostLinkedArticleToJson(this);
 }

@@ -95,7 +95,7 @@ class SearchResource extends Resource<SearchResource> {
   /// [hubs] - Comma-separated list of verticals (e.g. Gaming, Entertainment)\
   /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
   /// [limit] - Limit number of articles returned\
-  /// [minArticleQuality] - Minimal value of article quality. Ranges from 0 to 99
+  /// [minArticleQuality] - Minimal value of article quality. Range from 0 to 99
   @Deprecated('This endpoint seem to removed from the the API')
   Future<CombinedSearchResultSet> combined(String query,
           {String langs = 'en',
@@ -337,7 +337,7 @@ class ArticlesResource extends Resource<ArticlesResource> {
   ///
   /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
   /// [limit] - Limit the number of result - maximum limit is 100\
-  /// [minArticleQuality] - Minimal value of article quality. Ranges from 0 to 99
+  /// [minArticleQuality] - Minimal value of article quality. Range from 0 to 99
   Future<NewArticleResultSet> newArticles(
           {String namespaces, int limit, int minArticleQuality}) async =>
       _get('New', parameters: {
@@ -430,7 +430,7 @@ class ActivityResource extends Resource<ActivityResource> {
   ///
   /// [limit] - Limit the number of results\
   /// [namespaces] - Comma-separated namespace ids, see: http://community.wikia.com/wiki/Help:Namespaces \
-  /// [allowDuplicates] - Set if duplicate values of an article's revisions made by the same user are not allowed
+  /// [allowDuplicates] - Include duplicates of revisions made by the same user
   Future<ActivityResponseResultSet> latestActivity(
           {int limit, String namespaces, bool allowDuplicates = true}) async =>
       _get('LatestActivity', parameters: {
@@ -482,7 +482,7 @@ class WamResource extends Resource<WamResource> {
   /// [avatarSize] - Size of admin avatars in pixels if [fetchAdmins] is enabled\
   /// [fetchWikiImages] - Determines if image of each wiki is to be returned (default 'false')\
   /// [wikiImageWidth] - Width of wiki image in pixels if [fetchWikiImages] is enabled\
-  /// [wikiImageHeight] - Height of wiki image in pixels if [fetchWikiImages] is enabled. Pass -1 to keep aspect ratio
+  /// [wikiImageHeight] - Height of wiki image in pixels if [fetchWikiImages] is enabled. Pass -1 to keep aspect ratio\
   Future<WamResultSet> wamIndex(
           {int wamDay,
           int wamPreviousDay,
@@ -519,12 +519,11 @@ class WamResource extends Resource<WamResource> {
         'wiki_image_height': wikiImageHeight
       }).then((json) => WamResultSet.fromJson(json));
 
-  /// Get language codes of the wikis that are in the WAM ranking for a given day
+  /// Get language code of the wikis that are in the WAM ranking for a given day
   ///
-  /// [wamDay] - Unix timestamp (in seconds) of the day for the requested\
-  /// language code list
+  /// [wamDay] - Unix timestamp (in seconds) of the day for the requested language code list\
   Future<WamLanguageResultSet> wamLanguages({int wamDay}) async =>
-      _get('MinMaxWamIndexDate', parameters: {'wam_day': wamDay})
+      _get('WAMLanguages', parameters: {'wam_day': wamDay})
           .then((json) => WamLanguageResultSet.fromJson(json));
 }
 
@@ -542,7 +541,7 @@ class WikisResource extends Resource<WikisResource> {
   /// [lang] - The comma-separated list of language codes (e.g. en,de,fr,es,it, etc.) to use as a filter\
   /// [limit] - The maximum number of results to fetch\
   /// [batch] - The batch/page index to retrieve\
-  /// [includeDomain] - Whether to include wikis' domains as search targets or not
+  /// [includeDomain] - Whether to include wikis' domains as search targets or not\
   Future<WikiaResultSet> byString(String string,
           {String hub,
           String lang,
@@ -565,7 +564,7 @@ class WikisResource extends Resource<WikisResource> {
   /// [lang] - The comma-separated list of language codes (e.g. en,de,fr,es,it, etc.) to use as a filter\
   /// [limit] - The maximum number of results to fetch\
   /// [batch] - The batch/page index to retrieve\
-  /// [includeDomain] - Whether to include wikis' domains as search targets or not
+  /// [includeDomain] - Whether to include wikis' domain as search target or not
   Future<ExpandedWikiaResultSet> byStringExpanded(String string,
           {String hub,
           String lang,

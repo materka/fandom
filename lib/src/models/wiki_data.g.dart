@@ -28,14 +28,12 @@ WikiData _$WikiDataFromJson(Map<String, dynamic> json) {
         ?.toList(),
     json['vertical'] as String,
     json['basePath'] as String,
-    json['isGASpecialWiki'] as bool,
     json['articlePath'] as String,
     json['facebookAppId'] as String,
     json['appleTouchIcon'] == null
         ? null
         : Icon.fromJson(json['appleTouchIcon'] as Map<String, dynamic>),
     json['favicon'] as String,
-    json['isClosed'] as bool,
     json['scriptPath'] as String,
     json['surrogateKey'] as String,
     json['image'] as String,
@@ -46,6 +44,8 @@ WikiData _$WikiDataFromJson(Map<String, dynamic> json) {
     json['qualarooUrl'] as String,
     json['cdnRootUrl'] as String,
     json['contentNamespaces'] as List,
+    isGASpecialWiki: json['isGASpecialWiki'] as bool,
+    isClosed: json['isClosed'] as bool,
   );
 }
 

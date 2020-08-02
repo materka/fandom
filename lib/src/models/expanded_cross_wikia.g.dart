@@ -46,7 +46,7 @@ Map<String, dynamic> _$ExpandedCrossWikiaToJson(ExpandedCrossWikia instance) {
   writeNotNull('url', instance.url);
   writeNotNull('image', instance.image);
   writeNotNull('flags', instance.flags);
-  writeNotNull('wam_score', instance.wam_score);
+  writeNotNull('wam_score', instance.wamScore);
   writeNotNull('id', instance.id);
   writeNotNull('topUsers', instance.topUsers);
   writeNotNull('wordmark', instance.wordmark);

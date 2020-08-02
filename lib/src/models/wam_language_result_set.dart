@@ -13,6 +13,7 @@ class WamLanguageResultSet extends ResultSet<String> {
   /// list of language codes of the wikis that are in the WAM ranking
   /// for a given day
   @JsonKey(name: 'languages')
+  @override
   List<String> get items => super.items;
 
   WamLanguageResultSet(List<String> items) : super(items, null);

@@ -30,7 +30,7 @@ class User {
   /// Wikia user login
   final String title;
 
-  /// Is the user subject to CCPA (California Consumer Privacy Act) 1 - Yes, 0 -No
+  /// Is the user subject to CCPA (California Consumer Privacy Act) 1 / 0
   @JsonKey(name: 'is_subject_to_ccpa')
   final int isSubjectToCCPA;
 

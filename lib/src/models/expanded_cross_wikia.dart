@@ -34,7 +34,8 @@ class ExpandedCrossWikia {
   final List<String> flags;
 
   /// Wiki WAM score
-  final double wam_score;
+  @JsonKey(name: 'wam_score')
+  final double wamScore;
 
   /// An internal identification number for Wikia
   final String id; // TODO: Doc API says type int but return String
@@ -61,7 +62,7 @@ class ExpandedCrossWikia {
       this.url,
       this.image,
       this.flags,
-      this.wam_score,
+      this.wamScore,
       this.id,
       this.topUsers,
       this.wordmark,
