@@ -4,10 +4,9 @@
 
 import 'dart:math';
 
-import 'package:fandom/src/models/article_details_result_set.dart';
-
 import 'fandom.dart';
 import 'models/activity_response_result_set.dart';
+import 'models/article_details_result_set.dart';
 import 'models/article_result_set.dart';
 import 'models/combined_search_result_set.dart';
 import 'models/content.dart';
