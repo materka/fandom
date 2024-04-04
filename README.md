@@ -1,3 +1,6 @@
+## 💀 This Library is archived and dead 💀
+The Wikia API V1 lost its documentation following the [UCP](https://community.fandom.com/wiki/Help:Unified_Community_Platform) update. Some of the endpoints disappeared without notice throughout the years and, generally, it seems that Wikia API is no longer supported.
+
 A library for Fandom [APIv1][api] (formerly known as Wikia) interaction, which makes it easy to access data from specified fandom URL
 
 ## Usage
